@@ -5,6 +5,7 @@ import Menu from './componentes/Menu';
 
 console.log(config);
 var mainJson=null;
+var enlaces=null;
 
 function App() {
   const [isReady, setIsReady ] = useState(false);
@@ -15,11 +16,14 @@ function App() {
   }, []);
 
   async function cargarDatos() {
-    const response = await fetch (config.apiServer+"recuperar_datos_covid.php");
-    mainJson = await response.json();
-    console.log(mainJson);
-    setIsReady(true);
-    
+    let response;
+      response = await fetch (config.apiServer+"recuperar_datos_covid.php");
+      mainJson = await response.json();    
+      console.log(mainJson);
+      response = await fetch (config.apiServer+"recuperar_enlaces-info.php");
+      enlaces = await response.json();
+      console.log("enlaces", enlaces);
+      setIsReady(true);    
   }
 
 
