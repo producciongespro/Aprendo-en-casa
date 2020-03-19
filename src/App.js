@@ -1,10 +1,16 @@
 import React, {useState, useEffect}  from 'react';
 import Splash from './componentes/Splash';
+import Menu from './componentes/Menu';
 
 
 function App() {
 
   const [isReady, setIsReady ] = useState(false);
+
+
+  useEffect(()=>{
+  cargarDatos();
+  }, []);
 
   function cargarDatos() {
     setTimeout(function () { 
@@ -15,7 +21,12 @@ function App() {
 
   return (
     <div className="APP">
-      <Splash />
+        {
+          !isReady ?
+            <Splash />
+            :
+            <Menu/>
+        }
     </div>
   );
 }

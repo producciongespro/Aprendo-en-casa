@@ -1,0 +1,19 @@
+[
+    {
+        "poblacion": "Docentes",      
+        "categoria": "Oferta Televisiva",
+        "nombre": "Café Nacional SINART Canal 13",
+        "descripcion": "De Lunes a viernes",
+        "link": "www.nacion.com",
+        "tipo": "link"
+    },
+    {
+        "poblacion": "Docentes",      
+        "categoria": "Oferta Virtual",
+        "nombre": "Actualización Cursos Virtuales",
+        "descripcion": null,
+        "link": "www.idp.com",
+        "tipo": "link"
+    }
+
+]
