@@ -11,9 +11,16 @@ function Menu(props) {
 
     return (
         <div className="container">
-            <div className="jumbotron">
-                <h1>Menu</h1>
+            <br/>
+            <div className="row">
+                <div className="col-sm-6">
+                    <img src="imagen.titulo.png" alt="Imagen de títiulo" /> 
+                </div>
+                <div className="col-sm-6 text-right">
+                    <button onClick={props.handleCargarComponente} data-comp="enlaces" className="btn btn-success" >Enlaces COVID-19</button>
+                </div>
             </div>
+            <br/>
 
             <div className="row">
                 <div className="col-sm-4">
