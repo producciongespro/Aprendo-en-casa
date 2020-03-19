@@ -15,7 +15,7 @@ function Splash() {
         <hr/>
         <div className="row">
             <div className="col-sm-12">
-                <h3>Convid-19</h3>
+                <h3>Cargando datos, por favor espere...</h3>
             </div>
         </div>
         </div>
