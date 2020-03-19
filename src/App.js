@@ -1,7 +1,10 @@
 import React, {useState, useEffect}  from 'react';
+import config from './config.json';
 import Splash from './componentes/Splash';
 import Menu from './componentes/Menu';
-import mainJson from './data-oferta.json';
+
+console.log(config);
+var mainJson=null;
 
 function App() {
   const [isReady, setIsReady ] = useState(false);
@@ -11,10 +14,12 @@ function App() {
   cargarDatos();
   }, []);
 
-  function cargarDatos() {
-    setTimeout(function () { 
-      setIsReady(true)
-     }, 1000);    
+  async function cargarDatos() {
+    const response = await fetch (config.apiServer+"recuperar_datos_covid.php");
+    mainJson = await response.json();
+    console.log(mainJson);
+    setIsReady(true);
+    
   }
 
 

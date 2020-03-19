@@ -1,0 +1,5 @@
+{
+    "appName": "Aprendo en Casa",
+    "version": "1.0",
+    "apiServer": "http://localhost/conavid19/webservices/"
+}
