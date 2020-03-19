@@ -2,19 +2,18 @@ import React from 'react';
 import filtrar from '../modulos/filtrar';
 
 
-
 function Menu(props) {
     const docentes = filtrar(props.array, "poblacion", "Docentes");
     const estudiantes = filtrar(props.array, "poblacion", "Estudiantes");
     const familias = filtrar(props.array, "poblacion", "Familias");
-    
+    const img = 'assets/img/';
 
     return (
         <div className="container">
             <br/>
             <div className="row">
                 <div className="col-sm-6">
-                    <img src="imagen.titulo.png" alt="Imagen de títiulo" /> 
+                    <img src={img +"encabezado_ch_aprendoencasa.png"} alt="Imagen de títiulo" /> 
                 </div>
                 <div className="col-sm-6 text-right">
                     <button onClick={props.handleCargarComponente} data-comp="enlaces" className="btn btn-success" >Enlaces COVID-19</button>
@@ -24,7 +23,8 @@ function Menu(props) {
 
             <div className="row">
                 <div className="col-sm-4">
-                    <h4>Docentes</h4>                        
+                    <h4>Docentes</h4>  
+                    <img src={img + "img_ch_docentes.png"} alt="Imagen de docentes"/>                      
                     <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est possimus libero reprehenderit cum optio expedita.
                     </p>

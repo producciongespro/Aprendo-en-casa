@@ -4,6 +4,7 @@ import Splash from './componentes/Splash';
 import Menu from './componentes/Menu';
 import EnlacesCovid from './componentes/EnlacesCovid';
 
+
 console.log(config);
 var mainJson=null;
 var enlaces=null;
