@@ -1,3 +1,11 @@
+body {
+    font-family: 'Dancing Script', cursive;
+}
+
+.fondo-negro {
+    background-color: black;
+}
+
 .mouse-over {
     cursor: pointer;
 }

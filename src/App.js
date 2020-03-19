@@ -1,13 +1,21 @@
-import React from 'react';
+import React, {useState, useEffect}  from 'react';
+import Splash from './componentes/Splash';
 
 
 function App() {
-  return (
-    <div className="container">
-      <div className="jumbotron">
-        <h1>CONVID-19</h1>
-      </div>
 
+  const [isReady, setIsReady ] = useState(false);
+
+  function cargarDatos() {
+    setTimeout(function () { 
+      setIsReady(true)
+     }, 1000);    
+  }
+
+
+  return (
+    <div className="APP">
+      <Splash />
     </div>
   );
 }
