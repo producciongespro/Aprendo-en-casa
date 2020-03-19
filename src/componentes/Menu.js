@@ -24,10 +24,7 @@ function Menu(props) {
             <div className="row">
                 <div className="col-sm-4">
                     <h4>Docentes</h4>  
-                    <img src={img + "img_ch_docentes.png"} alt="Imagen de docentes"/>                      
-                    <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est possimus libero reprehenderit cum optio expedita.
-                    </p>
+                    <img src={img + "img_ch_docentes.png"} alt="Imagen de docentes"/>                     
                         
                         {                            
                             docentes.map((item, i) => (                    
@@ -48,10 +45,7 @@ function Menu(props) {
 
                 <div className="col-sm-4">                    
                     <h4>Estudiantes</h4>
-                    <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est possimus libero reprehenderit cum optio expedita.
-                    </p>
-                        
+                    <img src={img + "img_ch_estudiantes.png"} alt="Imagen de estudiantes"/>  
                         {                            
                             estudiantes.map((item, i) => (                    
                                     <div key={"docentes"+i} className="alert alert-primary" role="alert">
@@ -69,9 +63,7 @@ function Menu(props) {
 
                 <div className="col-sm-4">
                     <h4>Familia</h4>
-                    <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est possimus libero reprehenderit cum optio expedita.
-                    </p>
+                    <img src={img + "img_ch_familia.png"} alt="Imagen de familia"/>  
                         
                         {                           
                             familias.map((item, i) => (                    
