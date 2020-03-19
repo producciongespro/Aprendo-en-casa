@@ -1,10 +1,9 @@
 import React, {useState, useEffect}  from 'react';
 import Splash from './componentes/Splash';
 import Menu from './componentes/Menu';
-
+import mainJson from './data-oferta.json';
 
 function App() {
-
   const [isReady, setIsReady ] = useState(false);
 
 
@@ -25,7 +24,7 @@ function App() {
           !isReady ?
             <Splash />
             :
-            <Menu/>
+            <Menu array={mainJson} />
         }
     </div>
   );

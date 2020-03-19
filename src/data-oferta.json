@@ -4,7 +4,7 @@
         "categoria": "Oferta Televisiva",
         "nombre": "Café Nacional SINART Canal 13",
         "descripcion": "De Lunes a viernes",
-        "link": "www.nacion.com",
+        "link": "https://www.nacion.com/",
         "tipo": "link"
     },
     {
@@ -12,7 +12,7 @@
         "categoria": "Oferta Virtual",
         "nombre": "Actualización Cursos Virtuales",
         "descripcion": null,
-        "link": "www.idp.com",
+        "link": "https://www.nationalgeographic.com/",
         "tipo": "link"
     }
 
