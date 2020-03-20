@@ -19,7 +19,12 @@
 </head>
 
 <body>
-    <img src="img/encabezado_ch_aprendoencasa.png" alt="">
+    <div class="row text-center">
+        <div class="col-sm-12">
+             <img class="img img-fluid" src="img/encabezado_ch_aprendoencasa.png" alt="">
+        </div>
+    </div>
+   
     <section style="margin-top: 25px;">
         <div class="container" id="contenedor">
             <h3>Nuevo recurso/enlace</h3>
