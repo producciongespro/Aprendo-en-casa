@@ -16,21 +16,10 @@ body {
     margin-left: 16px;
 }
 
-
-.btnvolver
-{
-    margin-top: -134px;
-    margin-right: -80px
+.jumbotron {
+    padding: 1rem 2rem !important;
 }
 
-
-.encabRecursos
-{
-    background-color: #6c757d;
+.img-derecha {
+    margin-left: 85%;
 }
-
-.encabAprend
-{
-    background-color: #6c757d;
-}
-
