@@ -28,10 +28,10 @@ function App() {
     let response;
       response = await fetch (config.apiServer+"recuperar_datos_covid.php");
       mainJson = await response.json();    
-      console.log(mainJson);
+      //console.log(mainJson);
       response = await fetch (config.apiServer+"recuperar_enlaces-info.php");
       enlaces = await response.json();
-      console.log("enlaces", enlaces);
+      //console.log("enlaces", enlaces);
       setIsReady(true);
       
   }

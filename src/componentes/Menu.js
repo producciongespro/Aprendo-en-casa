@@ -1,34 +1,46 @@
 import React from 'react';
 import filtrar from '../modulos/filtrar';
 
+//imagenes
+import imgEncabezado from '../assets/img/encabezado_ch_aprendoencasa.png';
+import imgDocentes from '../assets/img/img_ch_docentes.png';
+import imgEstudiantes from '../assets/img/img_ch_estudiantes.png';
+import imgFamilia from '../assets/img/img_ch_familia.png';
+import ofertaTelevisiva from '../assets/img/btn_ch_oferta_tv.png';
+
 
 function Menu(props) {
     const docentes = filtrar(props.array, "poblacion", "Docentes");
     const estudiantes = filtrar(props.array, "poblacion", "Estudiantes");
+    console.log(docentes);    
+    
     const familias = filtrar(props.array, "poblacion", "Familias");
-    const img = 'assets/img/';
+    const ofertaTelevisivaDocentes = filtrar(docentes, "categoria", "Oferta televisiva");
+    
 
     return (
         <div className="container">
             <br/>
             <div className="row">
-                <div className="col-sm-6">
-                    <img src={img +"encabezado_ch_aprendoencasa.png"} alt="Imagen de títiulo" /> 
-                </div>
-                <div className="col-sm-6 text-right">
-                    <button onClick={props.handleCargarComponente} data-comp="enlaces" className="btn btn-success" >Enlaces COVID-19</button>
+                <div className="col-sm-12">
+                    <img className="img-fluid" src={imgEncabezado} alt="Imagen de títiulo" /> 
+                </div>                
+            </div>
+            <div className="row">
+                <div className="col-sm-12 text-right">                
+                    <button onClick={props.handleCargarComponente} data-comp="enlaces" className="btn btn-success" >Enlaces COVID-19</button>                
                 </div>
             </div>
             <br/>
 
             <div className="row">
-                <div className="col-sm-4">
-                    <h4>Docentes</h4>  
-                    <img src={img + "img_ch_docentes.png"} alt="Imagen de docentes"/>                     
-                        
+                <div className="col-sm-4">                    
+                    <img className="img-fluid" src={imgDocentes} alt="Imagen de docentes" />                     
+                    <br/>
+                    <img className="img-fluid" src={ofertaTelevisiva} alt="oferta televisiva" />
                         {                            
-                            docentes.map((item, i) => (                    
-                                    <div key={"docentes"+i} className="alert alert-primary" role="alert">
+                            ofertaTelevisivaDocentes.map((item, i) => (                    
+                                    <div key={"docentes"+i} className="alert" role="alert">
                                         <a href={item.link} target="_blank" rel="noopener noreferrer">
                                                 <h6>{ item.nombre }</h6>
                                         </a>
@@ -43,9 +55,8 @@ function Menu(props) {
                     
                 </div>
 
-                <div className="col-sm-4">                    
-                    <h4>Estudiantes</h4>
-                    <img src={img + "img_ch_estudiantes.png"} alt="Imagen de estudiantes"/>  
+                <div className="col-sm-4">                                        
+                    <img src={ imgEstudiantes } alt="Imagen de estudiantes"/>  
                         {                            
                             estudiantes.map((item, i) => (                    
                                     <div key={"docentes"+i} className="alert alert-primary" role="alert">
@@ -61,9 +72,8 @@ function Menu(props) {
                         }
                     </div>
 
-                <div className="col-sm-4">
-                    <h4>Familia</h4>
-                    <img src={img + "img_ch_familia.png"} alt="Imagen de familia"/>  
+                <div className="col-sm-4">                    
+                    <img src={imgFamilia } alt="Imagen de familia"/>  
                         
                         {                           
                             familias.map((item, i) => (                    
