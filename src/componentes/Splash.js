@@ -9,13 +9,13 @@ function Splash() {
         <div className="container text-center">
                 <div className="row">
             <div className="col-sm-12 m-10">
-                <img src={imgVirus} alt="Imagen de virus animado"/>
+                <img className="img-fluid" src={imgVirus} alt="Imagen de virus animado"/>
             </div>
         </div>
         <hr/>
         <div className="row">
             <div className="col-sm-12">
-                <h3>Cargando datos, por favor espere...</h3>
+                <h3 className="cargando" >Cargando datos, por favor espere...</h3>
             </div>
         </div>
         </div>

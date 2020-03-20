@@ -21,7 +21,7 @@ function EnlacesCovid (props) {
             </div>
         
             <div className="row">
-             Conjunto de recursos en video y pdf, para apoyar en la comprensión del porqué y cómo actuar ante el estado de emergencia COVID-19 en nuestro país.
+                <p className="indicaciones" >Conjunto de recursos en video y pdf, para apoyar en la comprensión del porqué y cómo actuar ante el estado de emergencia COVID-19 en nuestro país.</p>
             </div>
             <hr/>
             <div className="row">

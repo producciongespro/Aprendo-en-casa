@@ -47,6 +47,17 @@ background-color:#009962;
 {
   color: #7087B7;  
   font-size: 15px;
-  font-weight: 100px;
-  
+  line-height: 1.5
+}
+
+.cargando
+{
+  color: #7087B7;  
+  font-size: 30px;
+}
+
+.indicaciones
+{
+    color: #7087B7;  
+    font-size: 22px;  
 }
