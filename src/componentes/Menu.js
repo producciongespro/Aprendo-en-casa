@@ -16,9 +16,17 @@ function Menu(props) {
     const estudiantes = filtrar(props.array, "poblacion", "Estudiantes");  
     const familias = filtrar(props.array, "poblacion", "Familias");
     
+    //Array filtrados docentes:
     const ofertaTelevisivaDocentes = filtrar(docentes, "categoria", "Oferta televisiva");
     const ofertaVirtualDocentes = filtrar(docentes, "categoria", "Oferta virtual");
+    
+    //Array filtrados estudiantes:
     const ofertaTelevisivaEstudiantes = filtrar(estudiantes, "categoria", "Oferta televisiva");
+    const ofertaVirtualEstudiantes = filtrar(estudiantes, "categoria", "Oferta virtual");
+
+    //Array filtrados familias:
+    const ofertaTelevisivaFamilias = filtrar(familias, "categoria", "Oferta televisiva");
+    const ofertaVirtualFamilias = filtrar(familias, "categoria", "Oferta virtual");
 
 
     return (
@@ -38,10 +46,17 @@ function Menu(props) {
 
             <div className="row">
                 <div className="col-sm-4">
+                    {
+                        //***********DOCENTES
+                    }
                     <img className="img-fluid" src={imgDocentes} alt="Imagen de docentes" />
                     <br />
+                    {
+                        //oferta televisiva docentes
+                    }
                     <img className="img-fluid" src={imgOfertaTelevisiva} alt="oferta televisiva" />
                     {
+                        ofertaTelevisivaDocentes &&
                         ofertaTelevisivaDocentes.map((item, i) => (
                             <TarjetaOfertas item={item} i={i} key={"televisivaDocentes" + i} />
                         ))
@@ -50,6 +65,7 @@ function Menu(props) {
 
                     <img className="img-fluid" src={imgOfertaVirtual} alt="oferta televisiva" />
                     {
+                        ofertaVirtualDocentes &&
                         ofertaVirtualDocentes.map((item, i) => (
                             <TarjetaOfertas item={item} i={i} key={"virtualDocentes" + i} />                            
                         ))
@@ -59,11 +75,34 @@ function Menu(props) {
                 </div>
 
                 <div className="col-sm-4">
+                {
+                        //***********ESTUDIANTES
+                    }
                     <img src={imgEstudiantes} alt="Imagen de estudiantes" />
+                    <br/>
                     {
+                        //oferta televisiva  estudiantes
+                    }
+                    <img className="img-fluid" src={imgOfertaTelevisiva} alt="oferta virtual" />
+                    {
+                        //Valida que el arreglo no esté vacio:
                         ofertaTelevisivaEstudiantes &&
+                        //Mapeo del arreglo para renderizar
                         ofertaTelevisivaEstudiantes.map((item, i) => (
                             <TarjetaOfertas item={item} i={i} key={"televisivaEstudiantes" + i} />                            
+                        ))
+
+                    }
+                     {
+                        //oferta virtual estudiantes
+                    }
+                    <img className="img-fluid" src={imgOfertaVirtual} alt="oferta virtual" />
+                    {
+                        //Valida que el arreglo no esté vacio:
+                        ofertaVirtualEstudiantes &&
+                        //Mapeo del arreglo para renderizar
+                        ofertaVirtualEstudiantes.map((item, i) => (
+                            <TarjetaOfertas item={item} i={i} key={"virtualEstudiantes" + i} />                            
                         ))
 
                     }
@@ -73,16 +112,7 @@ function Menu(props) {
                     <img src={imgFamilia} alt="Imagen de familia" />
 
                     {
-                        familias.map((item, i) => (
-                            <div key={"docentes" + i} className="alert alert-primary" role="alert">
-                                <a href={item.link} target="_blank" rel="noopener noreferrer">
-                                    <h6>{item.nombre}</h6>
-                                </a>
-                                {item.descripcion !== "null" &&
-                                    <span>{item.descripcion}</span>
-                                }
-                            </div>
-                        ))
+                            // PAty inicia toda la programación como los de arriba
 
                     }
                 </div>
