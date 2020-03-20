@@ -1,5 +1,10 @@
 body {
-    font-family: 'Dancing Script', cursive;
+   
+}
+
+a
+{ 
+    color: #E40069; 
 }
 
 .fondo-negro {
@@ -55,7 +60,3 @@ background-color:#009962;
 }
 
 
-a 
-{ 
-    color: #E40069; 
-}
