@@ -112,9 +112,40 @@ function Menu(props) {
                     <img src={imgFamilia} alt="Imagen de familia" />
 
                     {
-                            // PAty inicia toda la programación como los de arriba
+                            // FAMILIA
 
                     }
+
+                <img className="img-fluid" src={imgOfertaTelevisiva} alt="oferta virtual" />
+                    {
+                        //Valida que el arreglo no esté vacio:
+                        ofertaTelevisivaFamilias &&
+                        //Mapeo del arreglo para renderizar
+                        ofertaTelevisivaFamilias.map((item, i) => (
+                            <TarjetaOfertas item={item} i={i} key={"televisivaFamilia" + i} />                            
+                        ))
+
+                    }
+                     {
+                        //oferta virtual estudiantes
+                    }
+                    <img className="img-fluid" src={imgOfertaVirtual} alt="oferta virtual" />
+                    {
+                        //Valida que el arreglo no esté vacio:
+                        ofertaVirtualFamilias &&
+                        //Mapeo del arreglo para renderizar
+                        ofertaVirtualFamilias.map((item, i) => (
+                            <TarjetaOfertas item={item} i={i} key={"virtualFamilia" + i} />                            
+                        ))
+
+                    }
+
+
+
+
+
+
+
                 </div>
             </div>
 
