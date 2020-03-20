@@ -16,6 +16,9 @@ function Menu(props) {
     const docentes = filtrar(props.array, "poblacion", "Docentes");
     const estudiantes = filtrar(props.array, "poblacion", "Estudiantes");  
     const familias = filtrar(props.array, "poblacion", "Familias");
+
+    console.log(docentes);
+    
     
     //Array filtrados docentes:
     const ofertaTelevisivaDocentes = filtrar(docentes, "categoria", "Oferta televisiva");
