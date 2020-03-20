@@ -2,10 +2,10 @@
 -- version 4.7.9
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1:3306
--- Generation Time: Mar 20, 2020 at 02:38 PM
--- Server version: 5.7.21
--- PHP Version: 7.1.16
+-- Servidor: 127.0.0.1:3306
+-- Tiempo de generación: 20-03-2020 a las 16:03:12
+-- Versión del servidor: 5.7.21
+-- Versión de PHP: 5.6.35
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `recursos_covid19`
+-- Base de datos: `recursos_covid19`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `categorias`
+-- Estructura de tabla para la tabla `categorias`
 --
 
 DROP TABLE IF EXISTS `categorias`;
@@ -33,21 +33,22 @@ CREATE TABLE IF NOT EXISTS `categorias` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `categoria` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `categorias`
+-- Volcado de datos para la tabla `categorias`
 --
 
 INSERT INTO `categorias` (`id`, `categoria`) VALUES
 (1, 'Oferta televisiva'),
 (2, 'Oferta virtual'),
-(3, 'Redes sociales');
+(3, 'Redes sociales'),
+(4, 'Mep informa');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `enlaces`
+-- Estructura de tabla para la tabla `enlaces`
 --
 
 DROP TABLE IF EXISTS `enlaces`;
@@ -61,18 +62,18 @@ CREATE TABLE IF NOT EXISTS `enlaces` (
 ) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `enlaces`
+-- Volcado de datos para la tabla `enlaces`
 --
 
 INSERT INTO `enlaces` (`id`, `nombre`, `descriptivo`, `url`, `urlImagen`) VALUES
-(1, 'El matavirus', 'Ayuda a Pepito a matar virus', 'https://www.nacion.com/', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/objetos-enigmaticos.jpg'),
+(1, 'El matavirus', 'Ayuda a Pepito a matar virus', 'www.nacion.com', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/objetos-enigmaticos.jpg'),
 (2, 'Descubriendo el corona virus', 'Los diferentres tipos de coronavirus que existen', 'https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo&hl=en', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/caja-herramientas-docentes.png'),
 (3, 'Amanda y su aventura en la caza de COVID-19', 'Los diferentres tipos de coronavirus que existen', 'https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo&hl=en', 'https://www.mep.go.cr/sites/default/files/imagecache/recurso_educativo_nodo/minibook-1cicle.jpg');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `menu`
+-- Estructura de tabla para la tabla `menu`
 --
 
 DROP TABLE IF EXISTS `menu`;
@@ -85,24 +86,29 @@ CREATE TABLE IF NOT EXISTS `menu` (
   `descripcion` varchar(256) COLLATE utf8_unicode_ci NOT NULL,
   `link` varchar(128) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `menu`
+-- Volcado de datos para la tabla `menu`
 --
 
 INSERT INTO `menu` (`id`, `poblacion`, `categoria`, `tipo`, `nombre`, `descripcion`, `link`) VALUES
-(1, 2, 1, 1, 'Café Nacional SINART Canal 13', 'De Lunes a viernes', 'https://www.nacion.com/'),
+(1, 2, 1, 1, 'Café Nacional SINART Canal 13', '8:00 a 10:00 am.  Lunes a viernes', 'www.nacion.com'),
 (2, 2, 2, 1, 'Actualización Cursos Virtuales', 'null', 'www.idp.com'),
-(3, 1, 1, 1, 'prueba 1', 'comentqrio 1', 'https://www.nacion.com/'),
-(4, 1, 2, 1, 'Prueba 2', 'Comentario 2', 'https://www.nacion.com/'),
-(5, 3, 1, 1, 'Prueba 3', 'Comentario 3', 'https://www.nacion.com/'),
-(6, 3, 2, 1, 'Prueba 4', 'Comentario 4', 'https://www.nacion.com/');
+(3, 1, 2, 1, 'Plan virtual promocional de la lectura', 'null', 'www.idp.com'),
+(4, 3, 1, 1, 'Programa Café Nacional Canal 13', '8:00 a 10:00 am.  Lunes a viernes', 'www.idp.com'),
+(5, 2, 1, 1, 'Caja de Herramientas Canal 13', '3:00 a 5:00 pm.  Lunes-miércoles-viernes', 'www.nacion.com'),
+(6, 2, 2, 1, 'Aula Virtual guía de trabajo', 'null', 'www.idp.com'),
+(7, 2, 4, 4, 'Lineamientos, documentos y noticias Mep', 'null', 'www.idp.com'),
+(8, 1, 1, 1, 'Primaria Programa para estudiantes', '11:00 am a 10:00 md.  Lunes a viernes', 'www.nacion.com'),
+(9, 1, 1, 1, 'Érase una vez', '3:00 a 5:00 pm.  Lunes a viernes', 'www.idp.com'),
+(10, 3, 1, 1, 'Érase una vez', '3:00 a 5:00 pm.  Lunes a viernes', 'www.idp.com'),
+(11, 1, 2, 1, 'Plataforma abierta CONED', 'null', 'www.idp.com');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `poblaciones`
+-- Estructura de tabla para la tabla `poblaciones`
 --
 
 DROP TABLE IF EXISTS `poblaciones`;
@@ -113,7 +119,7 @@ CREATE TABLE IF NOT EXISTS `poblaciones` (
 ) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `poblaciones`
+-- Volcado de datos para la tabla `poblaciones`
 --
 
 INSERT INTO `poblaciones` (`id`, `poblacion`) VALUES
@@ -124,7 +130,7 @@ INSERT INTO `poblaciones` (`id`, `poblacion`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tipos`
+-- Estructura de tabla para la tabla `tipos`
 --
 
 DROP TABLE IF EXISTS `tipos`;
@@ -135,7 +141,7 @@ CREATE TABLE IF NOT EXISTS `tipos` (
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `tipos`
+-- Volcado de datos para la tabla `tipos`
 --
 
 INSERT INTO `tipos` (`id`, `tipo`) VALUES
