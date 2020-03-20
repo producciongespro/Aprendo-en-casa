@@ -10,7 +10,7 @@ import imgFamilia from '../assets/img/img_ch_familia.png';
 import imgOfertaTelevisiva from '../assets/img/btn_ch_oferta_tv.png';
 import imgOfertaVirtual from '../assets/img/btn_ch_oferta_virtual.png';
 import imgRecursosCovid from '../assets/img/btn_ch_recursos_covid19.png';
-
+import imgLogo from '../assets/img/logotipos_ch_mep_sinart_cafenal.png';
 
 function Menu(props) {
     const docentes = filtrar(props.array, "poblacion", "Docentes");
@@ -20,6 +20,7 @@ function Menu(props) {
     //Array filtrados docentes:
     const ofertaTelevisivaDocentes = filtrar(docentes, "categoria", "Oferta televisiva");
     const ofertaVirtualDocentes = filtrar(docentes, "categoria", "Oferta virtual");
+    
     
     //Array filtrados estudiantes:
     const ofertaTelevisivaEstudiantes = filtrar(estudiantes, "categoria", "Oferta televisiva");
@@ -40,7 +41,7 @@ function Menu(props) {
             </div>
             <div className="row">
                 <div className="col-sm-12 text-right">
-                <img className="img-fluid btn-recursos" src={imgRecursosCovid} onClick={props.handleCargarComponente} data-comp="enlaces" alt="Enlaces COVID-19" />        
+                <img className="hvr-pop img-fluid btn-recursos" src={imgRecursosCovid} onClick={props.handleCargarComponente} data-comp="enlaces" alt="Enlaces COVID-19" />        
                 </div>
             </div>
             <br />
@@ -140,15 +141,19 @@ function Menu(props) {
                         ))
 
                     }
-
-
-
-
-
-
-
                 </div>
+
+
             </div>
+
+         <div className="row">
+            <div className="col-sm-10">
+                
+            </div>
+            <div className="col-sm-2">
+                <img src={imgLogo} alt="Imagen de virus animado"/>
+            </div>
+        </div>
 
         </div>
     )
