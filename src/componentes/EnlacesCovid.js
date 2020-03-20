@@ -6,17 +6,12 @@ function EnlacesCovid (props) {
         <div className="container">
             <div className="jumbotron">
                 <h1>Enlaces COVID-19</h1>
-            </div>
-            <div className="row">
-                <div className="col-sm-12 text-right">
-                    <button data-comp="menu" className="btn btn-info" onClick={props.handleCargarComponente} >
-                        Volver
-                    </button>
-                </div>
-            </div>
+                <img className="img-derecha" data-comp="menu" onClick={props.handleCargarComponente} src="www.imagen.png" alt="Botón volver" role="button" />
+            </div>            
             <div className="row">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis unde quidem esse minus deserunt eligendi, pariatur, optio eius enim a officia quod laborum necessitatibus ad ipsum? Necessitatibus hic quidem consectetur.
             </div>
+            <hr/>
             <div className="row">
                 {
                     props.array.map((item,i)=>(

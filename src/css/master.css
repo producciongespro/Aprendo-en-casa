@@ -15,3 +15,11 @@ body {
     margin-top: -145px;
     margin-left: 16px;
 }
+
+.jumbotron {
+    padding: 1rem 2rem !important;
+}
+
+.img-derecha {
+    margin-left: 85%;
+}
