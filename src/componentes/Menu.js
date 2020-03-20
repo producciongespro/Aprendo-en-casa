@@ -41,7 +41,7 @@ function Menu(props) {
             </div>
             <div className="row">
                 <div className="col-sm-12 text-right">
-                <img className="img-fluid btn-recursos hvr-pop btn" src={imgRecursosCovid} onClick={props.handleCargarComponente} data-comp="enlaces" alt="Enlaces COVID-19" />        
+                <img className="hvr-push img-fluid btn-recursos" src={imgRecursosCovid} onClick={props.handleCargarComponente} data-comp="enlaces" alt="Enlaces COVID-19" />        
                 </div>
             </div>
             <br />
@@ -148,12 +148,15 @@ function Menu(props) {
 
          <div className="row">
             <div className="col-sm-10">
-                
+            <p className="creditos"> DIRECCIÓN DE RECURSOS TECNOLÓGICOS EN EDUCACIÓN <br/> DIRECCIÓN DE DESARROLLO CURRICULAR</p>
             </div>
             <div className="col-sm-2">
                 <img src={imgLogo} alt="Imagen de virus animado"/>
             </div>
         </div>
+
+
+
 
         </div>
     )
