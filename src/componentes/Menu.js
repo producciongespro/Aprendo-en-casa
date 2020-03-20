@@ -44,7 +44,7 @@ function Menu(props) {
             </div>
             <div className="row">
                 <div className="col-sm-12 text-right">
-                <img className="hvr-push img-fluid btn-recursos" src={imgRecursosCovid} onClick={props.handleCargarComponente} data-comp="enlaces" alt="Enlaces COVID-19" />        
+                <img className="btn img-fluid btn-recursos hvr-push" src={imgRecursosCovid} onClick={props.handleCargarComponente} data-comp="enlaces" alt="Enlaces COVID-19" />        
                 </div>
             </div>
             <br />
