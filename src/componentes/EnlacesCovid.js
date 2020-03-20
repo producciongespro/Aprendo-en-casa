@@ -13,7 +13,7 @@ function EnlacesCovid (props) {
             </div>
     
             <div className="row">
-                <div className="col-sm-10 text-right">
+                <div className="col-sm-12 text-center">
                     <button data-comp="menu" className="btn btn-info btnvolver" onClick={props.handleCargarComponente} >
                         Volver
                     </button>
@@ -21,7 +21,9 @@ function EnlacesCovid (props) {
             </div>
         
             <div className="row">
-             Conjunto de recursos en video y pdf, para apoyar en la comprensión del porqué y cómo actuar ante el estado de emergencia COVID-19 en nuestro país. .
+                <div className="col-sm-12">
+                    Conjunto de recursos en video y pdf, para apoyar en la comprensión del porqué y cómo actuar ante el estado de emergencia COVID-19 en nuestro país. .
+                </div>
             </div>
             <hr/>
             <div className="row">
