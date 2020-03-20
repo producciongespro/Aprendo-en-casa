@@ -1,22 +1,38 @@
 import React from 'react';
+import imgEncabezadoRec from '../assets/img/encabezado_ch_recursos_covid19.png';
+
 
 function EnlacesCovid (props) {
     
     return (
         <div className="container">
-            <div className="jumbotron">
-                <h1>Enlaces COVID-19</h1>
-            </div>
+            
+
             <div className="row">
-                <div className="col-sm-12 text-right">
-                    <button data-comp="menu" className="btn btn-info" onClick={props.handleCargarComponente} >
+                <div className="col-sm-12 encabRecursos">
+                    <img className="img-fluid encab" src={imgEncabezadoRec} alt="Imagen de Encabezado" />
+                </div>
+            </div>
+    
+            <div className="row">
+                <div className="col-sm-10 text-right">
+                    <button data-comp="menu" className="btn btn-info btnvolver" onClick={props.handleCargarComponente} >
                         Volver
                     </button>
                 </div>
             </div>
+
+            
+
+
+            
+
+
             <div className="row">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis unde quidem esse minus deserunt eligendi, pariatur, optio eius enim a officia quod laborum necessitatibus ad ipsum? Necessitatibus hic quidem consectetur.
             </div>
+
+
             <div className="row">
                 {
                     props.array.map((item,i)=>(

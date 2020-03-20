@@ -35,13 +35,13 @@ function Menu(props) {
         <div className="container">
             <br />
             <div className="row">
-                <div className="col-sm-12">
+                <div className="col-sm-12 encabAprend">
                     <img className="img-fluid" src={imgEncabezado} alt="Imagen de títiulo" />
                 </div>
             </div>
             <div className="row">
                 <div className="col-sm-12 text-right">
-                <img className="hvr-pop img-fluid btn-recursos" src={imgRecursosCovid} onClick={props.handleCargarComponente} data-comp="enlaces" alt="Enlaces COVID-19" />        
+                <img className="img-fluid btn-recursos hvr-pop btn" src={imgRecursosCovid} onClick={props.handleCargarComponente} data-comp="enlaces" alt="Enlaces COVID-19" />        
                 </div>
             </div>
             <br />
