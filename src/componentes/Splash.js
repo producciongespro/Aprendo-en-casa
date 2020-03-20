@@ -6,16 +6,18 @@ function Splash() {
 
     return (
         
-        <div className="container text-center">
+        <div className="container text-center mt-5">
                 <div className="row">
-            <div className="col-sm-12 m-10">
-                <img src={imgVirus} alt="Imagen de virus animado"/>
+            <div className="col-sm-12 mt-5">
+                <img className="img-fluid" src={imgVirus} alt="Imagen de virus animado"/>
             </div>
-        </div>
-        <hr/>
+        </div>        
         <div className="row">
             <div className="col-sm-12">
-                <h3>Cargando datos, por favor espere...</h3>
+                <strong>
+                    Cargando datos, por favor espere...
+                </strong>
+                
             </div>
         </div>
         </div>

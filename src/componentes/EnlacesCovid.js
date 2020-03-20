@@ -7,19 +7,23 @@ function EnlacesCovid (props) {
     return (
         <div className="container">
            <div className="row">
-                <div className="col-sm-12 encabRecursos">
+                <div className="col-sm-12 encabRecursos mt-1">
                     <img className="img-fluid encab" src={imgEncabezadoRec} alt="Imagen de Encabezado" />
                 </div>
             </div>
-    
-            <div className="row">
+                
+            <div className="row my-3">
                 <div className="col-sm-12 text-center">
-                    <button data-comp="menu" className="btn btn-info btnvolver" onClick={props.handleCargarComponente} >
-                        Volver
-                    </button>
+                    <img 
+                        src="imagen.xxx.png" 
+                        alt="botón volver" 
+                        data-comp="menu" 
+                        onClick={props.handleCargarComponente}
+                    />
+                    
                 </div>
             </div>
-        
+            
             <div className="row">
                 <div className="col-sm-12">
                     Conjunto de recursos en video y pdf, para apoyar en la comprensión del porqué y cómo actuar ante el estado de emergencia COVID-19 en nuestro país. .
