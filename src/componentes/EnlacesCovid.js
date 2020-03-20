@@ -28,7 +28,7 @@ function EnlacesCovid (props) {
                 {
                     props.array.map((item,i)=>(
                         
-                <div key={"tarjeta" + i} className="col-4-sm">
+                <div key={"tarjeta" + i} className="col-sm-4">
                 <div className="card">
                     <img
                         src={item.urlImagen}
