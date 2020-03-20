@@ -14,7 +14,7 @@ function Splash() {
         </div>        
         <div className="row">
             <div className="col-sm-12">
-                <strong>
+                <strong className="cargando">
                     Cargando datos, por favor espere...
                 </strong>
                 

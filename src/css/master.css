@@ -12,8 +12,8 @@ body {
 
 .btn-recursos
 {
-    margin-top: -145px;
-    margin-left: 16px;
+    margin-top: -5%;
+    margin-left: 5%;
     cursor: pointer;
 }
 
@@ -38,18 +38,18 @@ background-color:#009962;
 .creditos
 {
   color: #7087B7;  
-  font-size: 15px;
+  font-size: 100%;
   line-height: 1.5
 }
 
 .cargando
 {
   color: #7087B7;  
-  font-size: 30px;
+  font-size: 100%;
 }
 
 .indicaciones
 {
     color: #7087B7;  
-    font-size: 22px;  
+    font-size: 100%;  
 }
