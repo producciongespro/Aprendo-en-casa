@@ -20,11 +20,11 @@ function EnlacesCovid (props) {
                 </div>
             </div>
         
-            <div className="row">
+            <div className="row-sm">
              Conjunto de recursos en video y pdf, para apoyar en la comprensión del porqué y cómo actuar ante el estado de emergencia COVID-19 en nuestro país. .
             </div>
             <hr/>
-            <div className="row">
+            <div className="row-sm">
                 {
                     props.array.map((item,i)=>(
                         
