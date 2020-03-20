@@ -19,6 +19,7 @@
 </head>
 
 <body>
+    <img src="img/encabezado_ch_aprendoencasa.png" alt="">
     <section style="margin-top: 25px;">
         <div class="container" id="contenedor">
             <h3>Nuevo recurso/enlace</h3>
