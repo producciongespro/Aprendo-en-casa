@@ -9,6 +9,7 @@ import imgEstudiantes from '../assets/img/img_ch_estudiantes.png';
 import imgFamilia from '../assets/img/img_ch_familia.png';
 import imgOfertaTelevisiva from '../assets/img/btn_ch_oferta_tv.png';
 import imgOfertaVirtual from '../assets/img/btn_ch_oferta_virtual.png';
+import imgRecursosCovid from '../assets/img/btn_ch_recursos_covid19.png';
 
 
 function Menu(props) {
@@ -39,7 +40,7 @@ function Menu(props) {
             </div>
             <div className="row">
                 <div className="col-sm-12 text-right">
-                    <button onClick={props.handleCargarComponente} data-comp="enlaces" className="btn btn-success" >Enlaces COVID-19</button>
+                <img className="img-fluid btn-recursos" src={imgRecursosCovid} onClick={props.handleCargarComponente} data-comp="enlaces" alt="Enlaces COVID-19" />        
                 </div>
             </div>
             <br />
