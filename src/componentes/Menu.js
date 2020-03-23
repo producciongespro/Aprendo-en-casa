@@ -62,7 +62,7 @@ function Menu(props) {
                     {
                         //oferta televisiva docentes
                     }
-                    <img className="img-fluid" src={imgOfertaTelevisiva} alt="oferta televisiva" />
+                    <img className="img-fluid hvr-bob" src={imgOfertaTelevisiva} alt="oferta televisiva" />
                     {
                         ofertaTelevisivaDocentes &&
                         ofertaTelevisivaDocentes.map((item, i) => (
@@ -73,7 +73,7 @@ function Menu(props) {
                     {
                         //oferta Virtual
                     }
-                    <img className="img-fluid" src={imgOfertaVirtual} alt="Oferta televisiva" />
+                    <img className="img-fluid hvr-bob" src={imgOfertaVirtual} alt="Oferta televisiva" />
                     {
                         ofertaVirtualDocentes &&
                         ofertaVirtualDocentes.map((item, i) => (
@@ -107,7 +107,7 @@ function Menu(props) {
                     {
                         //oferta televisiva  estudiantes
                     }
-                    <img className="img-fluid" src={imgOfertaTelevisiva} alt="oferta virtual" />
+                    <img className="img-fluid hvr-bob" src={imgOfertaTelevisiva} alt="oferta virtual" />
                     {
                         //Valida que el arreglo no esté vacio:
                         ofertaTelevisivaEstudiantes &&
@@ -148,7 +148,7 @@ function Menu(props) {
 
                     }
 
-                <img className="img-fluid" src={imgOfertaTelevisiva} alt="oferta virtual" />
+                <img className="img-fluid hvr-bob" src={imgOfertaTelevisiva} alt="oferta virtual" />
                     {
                         //Valida que el arreglo no esté vacio:
                         ofertaTelevisivaFamilias &&
@@ -172,7 +172,7 @@ function Menu(props) {
                         ))
                     */
                     }
-                    <img className="img-fluid" src={imgMepInforma} alt="MEP informa" />
+                    <img className="img-fluid hvr-bob" src={imgMepInforma} alt="MEP informa" />
                     {
                         //FAMILIA - MEP informa 
 

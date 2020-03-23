@@ -13,7 +13,7 @@ function EnlacesCovid (props) {
             </div>
                 
             <div className="row my-3">
-                <div className="col-sm-12 text-center img-fluid btn-volver">
+                <div className="col-sm-12 hvr-wobble-horizontal text-center img-fluid btn-volver">
                     <img 
                         src={imgVolver}
                         alt="botón volver" 
