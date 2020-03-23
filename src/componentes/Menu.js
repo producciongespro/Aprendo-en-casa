@@ -83,15 +83,15 @@ function Menu(props) {
 
                     {
                         //MEP informa
-                    }
-                    
-                    <img className="img-fluid" src={imgMepInforma} alt="MEP informa" />
+                        //<img className="img-fluid" src={imgMepInforma} alt="MEP informa" />
+                    }                                     
                     {
+                        /*
                         mepInformaDocentes &&
                         mepInformaDocentes.map((item, i) => (
                             <TarjetaOfertas item={item} i={i} key={"mepInforma" + i} />                            
                         ))
-
+                        */
                     }
 
 
@@ -150,17 +150,18 @@ function Menu(props) {
 
                     }
                      {
-                        //oferta virtual estudiantes
+                        //oferta virtual familia
+                        //<img className="img-fluid" src={imgOfertaVirtual} alt="oferta virtual" />
                     }
-                    <img className="img-fluid" src={imgOfertaVirtual} alt="oferta virtual" />
+                    
                     {
-                        //Valida que el arreglo no esté vacio:
+                     /*
                         ofertaVirtualFamilias &&
-                        //Mapeo del arreglo para renderizar
+                     
                         ofertaVirtualFamilias.map((item, i) => (
                             <TarjetaOfertas item={item} i={i} key={"virtualFamilia" + i} />                            
                         ))
-
+                    */
                     }
                 </div>
 
