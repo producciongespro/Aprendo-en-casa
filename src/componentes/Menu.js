@@ -12,6 +12,8 @@ import imgOfertaVirtual from '../assets/img/btn_ch_oferta_virtual.png';
 import imgRecursosCovid from '../assets/img/btn_ch_recursos_covid19.png';
 import imgLogo from '../assets/img/logotipos_ch_mep_sinart_cafenal.png';
 import imgMepInforma from '../assets/img/btn_ch_mep_informa.png';
+import imgGespro from '../assets/img/banner_gespro.gif';
+
 
 function Menu(props) {
     const docentes = filtrar(props.array, "poblacion", "Docentes");
@@ -186,16 +188,21 @@ function Menu(props) {
                     
                     }
                 </div>
-
-
             </div>
+
+    <div className="row">
+            <div className="col-sm-10">
+            <img className="img-fluid hvr-bob" src={imgGespro} alt="Banner Gespro" />
+            </div>
+            <div className="col-sm-2">
+                <img src={imgLogo} alt="Imagen de virus animado"/>
+            </div>
+     </div>
+
 
          <div className="row">
             <div className="col-sm-10">
             <strong className="creditos"> DIRECCIÓN DE RECURSOS TECNOLÓGICOS EN EDUCACIÓN <br/> DIRECCIÓN DE DESARROLLO CURRICULAR</strong>
-            </div>
-            <div className="col-sm-2">
-                <img src={imgLogo} alt="Imagen de virus animado"/>
             </div>
         </div>
 
