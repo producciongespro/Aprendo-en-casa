@@ -53,3 +53,12 @@ background-color:#009962;
     color: #7087B7;  
     font-size: 22px;  
 }
+
+.img-logo {
+    max-width: 50%;
+    max-height: auto;
+}
+
+.div-centrado {
+    margin-top: 20%;
+}

@@ -6,10 +6,10 @@ function Splash() {
 
     return (
         
-        <div className="container text-center mt-5">
+        <div className="div-centrado text-center ">
                 <div className="row">
             <div className="col-sm-12 mt-5">
-                <img className="img-fluid" src={imgVirus} alt="Imagen de virus animado"/>
+                <img className="img-logo" src={imgVirus} alt="Imagen de virus animado"/>
             </div>
         </div>        
         <div className="row">
