@@ -172,7 +172,7 @@ function Menu(props) {
                         ))
                     */
                     }
-                    <img className="img-fluid" src={imgMepInforma} alt="MEP informa" />
+                     <img className="img-fluid" src={imgMepInforma} alt="MEP informa" />
                     {
                         //FAMILIA - MEP informa 
 
