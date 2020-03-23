@@ -11,6 +11,7 @@ import imgOfertaTelevisiva from '../assets/img/btn_ch_oferta_tv.png';
 import imgOfertaVirtual from '../assets/img/btn_ch_oferta_virtual.png';
 import imgRecursosCovid from '../assets/img/btn_ch_recursos_covid19.png';
 import imgLogo from '../assets/img/logotipos_ch_mep_sinart_cafenal.png';
+import imgMepInforma from '../assets/img/btn_ch_mep_informa.png';
 
 function Menu(props) {
     const docentes = filtrar(props.array, "poblacion", "Docentes");
@@ -23,6 +24,7 @@ function Menu(props) {
     //Array filtrados docentes:
     const ofertaTelevisivaDocentes = filtrar(docentes, "categoria", "Oferta televisiva");
     const ofertaVirtualDocentes = filtrar(docentes, "categoria", "Oferta virtual");
+    const mepInformaDocentes = filtrar(docentes, "categoria", "Mep informa");
     
     
     //Array filtrados estudiantes:
@@ -67,8 +69,10 @@ function Menu(props) {
                         ))
 
                     }
-
-                    <img className="img-fluid" src={imgOfertaVirtual} alt="oferta televisiva" />
+                    {
+                        //oferta Virtual
+                    }
+                    <img className="img-fluid" src={imgOfertaVirtual} alt="Oferta televisiva" />
                     {
                         ofertaVirtualDocentes &&
                         ofertaVirtualDocentes.map((item, i) => (
@@ -76,6 +80,20 @@ function Menu(props) {
                         ))
 
                     }
+
+                    {
+                        //MEP informa
+                    }
+                    
+                    <img className="img-fluid" src={imgMepInforma} alt="MEP informa" />
+                    {
+                        mepInformaDocentes &&
+                        mepInformaDocentes.map((item, i) => (
+                            <TarjetaOfertas item={item} i={i} key={"mepInforma" + i} />                            
+                        ))
+
+                    }
+
 
                 </div>
 
