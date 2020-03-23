@@ -9,7 +9,7 @@ function Splash() {
         <div className="div-centrado text-center ">
                 <div className="row">
             <div className="col-sm-12 mt-5">
-                <img className="img-logo" src={imgVirus} alt="Imagen de virus animado"/>
+                <img className="img-logo img-fluid" src={imgVirus} alt="Imagen de virus animado"/>
             </div>
         </div>        
         <div className="row">
