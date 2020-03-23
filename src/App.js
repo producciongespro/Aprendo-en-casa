@@ -48,7 +48,7 @@ function App() {
         }
         {
           isReady && nombreComponente === "enlaces" &&
-            <EnlacesCovid  array={enlaces} handleCargarComponente={handleCargarComponente} />                      
+            <EnlacesCovid array={enlaces} handleCargarComponente={handleCargarComponente} />                      
         }
 
 

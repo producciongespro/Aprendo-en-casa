@@ -1,6 +1,6 @@
 import React from 'react';
 import imgEncabezadoRec from '../assets/img/encabezado_ch_recursos_covid19.png';
-
+import imgVolver from '../assets/img/btn_ch_volver.png';
 
 function EnlacesCovid (props) {
     
@@ -13,9 +13,9 @@ function EnlacesCovid (props) {
             </div>
                 
             <div className="row my-3">
-                <div className="col-sm-12 text-center">
+                <div className="col-sm-12 text-center img-fluid btn-volver">
                     <img 
-                        src="imagen.xxx.png" 
+                        src={imgVolver}
                         alt="botón volver" 
                         data-comp="menu" 
                         onClick={props.handleCargarComponente}
@@ -26,7 +26,7 @@ function EnlacesCovid (props) {
             
             <div className="row">
                 <div className="col-sm-12">
-                    Conjunto de recursos en video y pdf, para apoyar en la comprensión del porqué y cómo actuar ante el estado de emergencia COVID-19 en nuestro país. .
+                    <strong className="indicaciones">Conjunto de recursos en video y pdf, para apoyar en la comprensión del porqué y cómo actuar ante el estado de emergencia COVID-19 en nuestro país.</strong>
                 </div>
             </div>
             <hr/>
