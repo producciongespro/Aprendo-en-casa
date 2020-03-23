@@ -1,8 +1,10 @@
     // var poblaciones=[];
     // var categorias=[];
     $(document).ready(function() {
+        $("#categorias").select(0);
        obtenerPoblaciones();
        obtenerCategorias();
+       $("#horarios_tv").hide();
        $("#btnEnviarRecurso").click(function (e) { 
            e.preventDefault();
            formularioCovid();
@@ -10,6 +12,15 @@
        $("#btnEnviar").click(function (e) { 
            e.preventDefault();
            formularioRecursos();
+       });
+       $("#categorias").change(function (e) { 
+           e.preventDefault();
+           if ($("#categorias").val()==="1"){
+            $("#horarios_tv").show();
+               
+           } else {
+            $("#horarios_tv").hide();
+           }
        });
 });
 

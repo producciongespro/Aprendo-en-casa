@@ -11,7 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="css/estilos.css">
     <script src="js/main.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
     <!-- <link href="estilos.css" rel="stylesheet"> -->
@@ -43,7 +43,7 @@
                             <div class="selector-tipos">
                                 <label for="categorias">Seleccione la categoría</label>
                                 <select class="form-control" name="categorias" id="categorias">
-                                    <option value="Seleccione categoría" selected disabled></option>
+                                    <option value="Seleccione una categoría" selected disabled></option>
                                 </select>
                             </div>
                         </div>
@@ -57,7 +57,7 @@
                         </div>
                         <br>
                         <div class="col-sm-12">
-                            <div class="selector-tipos">
+                            <div class="selector-tipos oculto" id="horarios_tv">
                                 <label for="categorias">Ingrese el horario (en caso de oferta televisiva)</label><br>
                                 <input  type="text"  class="form-control" name="horario" id="horario"></input>
                             </div>
@@ -81,7 +81,7 @@
                 <div class="row text-center">
                             
                             <div class="col-12 text-center"><br>
-                                <input name="btnEnviar" type="submit" class="btn btn-success" value="Enviar">
+                            <button name="btnEnviar" class="btn btn-success" id="btnEnviar" type="submit">Enviar recurso</button>
                             </div>
                         </div>
             </form><br>
