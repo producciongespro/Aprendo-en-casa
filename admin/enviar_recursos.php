@@ -4,15 +4,13 @@ include('conectar.php');
 sleep(2);
 $conexion=conectarDB();
 if ($_POST) {
-  $poblacion= utf8_decode($_POST['poblaciones']);
-  $categoria= utf8_decode($_POST['categorias']);
-  $tipo = 1;
   $nombre= utf8_decode($_POST['nombre']);
+  $descriptivo= utf8_decode($_POST['descriptivo']);
   $url= utf8_decode($_POST['url']);
-  $horario = utf8_decode($_POST['horario']);
+  $urlImagen = utf8_decode($_POST['urlImagen']);
   $clave = utf8_decode($_POST['clave']);
   if ($clave=="pepito") {
-       $insercion = "INSERT INTO `menu`(`poblacion`, `categoria`, `tipo`, `nombre`, `descripcion`, `link`) VALUES ('$poblacion','$categoria','$tipo','$nombre','$horario','$url')";
+       $insercion = "INSERT INTO `enlaces`(`nombre`, `descriptivo`, `url`, `urlImagen`) VALUES ('$nombre','$descriptivo','$url','$urlImagen')";
         // mysqli_query($conexion,$insercion);
         if ($conexion->query($insercion) === TRUE) {
             echo json_encode(array('error'=>'false','msj'=>'Recurso agregado satisfactoriamente'));
@@ -27,4 +25,3 @@ if ($_POST) {
     } 
   }
    
-
