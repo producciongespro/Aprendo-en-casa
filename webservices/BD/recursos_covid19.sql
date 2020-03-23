@@ -2,10 +2,10 @@
 -- version 4.7.9
 -- https://www.phpmyadmin.net/
 --
--- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 20-03-2020 a las 16:03:12
--- Versión del servidor: 5.7.21
--- Versión de PHP: 5.6.35
+-- Host: 127.0.0.1:3306
+-- Generation Time: Mar 23, 2020 at 02:27 PM
+-- Server version: 5.7.21
+-- PHP Version: 7.1.16
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `recursos_covid19`
+-- Database: `recursos_covid19`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `categorias`
+-- Table structure for table `categorias`
 --
 
 DROP TABLE IF EXISTS `categorias`;
@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `categorias` (
 ) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Volcado de datos para la tabla `categorias`
+-- Dumping data for table `categorias`
 --
 
 INSERT INTO `categorias` (`id`, `categoria`) VALUES
@@ -48,7 +48,7 @@ INSERT INTO `categorias` (`id`, `categoria`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `enlaces`
+-- Table structure for table `enlaces`
 --
 
 DROP TABLE IF EXISTS `enlaces`;
@@ -62,7 +62,7 @@ CREATE TABLE IF NOT EXISTS `enlaces` (
 ) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Volcado de datos para la tabla `enlaces`
+-- Dumping data for table `enlaces`
 --
 
 INSERT INTO `enlaces` (`id`, `nombre`, `descriptivo`, `url`, `urlImagen`) VALUES
@@ -73,7 +73,7 @@ INSERT INTO `enlaces` (`id`, `nombre`, `descriptivo`, `url`, `urlImagen`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `menu`
+-- Table structure for table `menu`
 --
 
 DROP TABLE IF EXISTS `menu`;
@@ -89,7 +89,7 @@ CREATE TABLE IF NOT EXISTS `menu` (
 ) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Volcado de datos para la tabla `menu`
+-- Dumping data for table `menu`
 --
 
 INSERT INTO `menu` (`id`, `poblacion`, `categoria`, `tipo`, `nombre`, `descripcion`, `link`) VALUES
@@ -99,7 +99,7 @@ INSERT INTO `menu` (`id`, `poblacion`, `categoria`, `tipo`, `nombre`, `descripci
 (4, 3, 1, 1, 'Programa Café Nacional Canal 13', '8:00 a 10:00 am.  Lunes a viernes', 'www.idp.com'),
 (5, 2, 1, 1, 'Caja de Herramientas Canal 13', '3:00 a 5:00 pm.  Lunes-miércoles-viernes', 'www.nacion.com'),
 (6, 2, 2, 1, 'Aula Virtual guía de trabajo', 'null', 'www.idp.com'),
-(7, 2, 4, 4, 'Lineamientos, documentos y noticias Mep', 'null', 'www.idp.com'),
+(7, 2, 4, 1, 'Lineamientos, documentos y noticias Mep', 'null', 'www.idp.com'),
 (8, 1, 1, 1, 'Primaria Programa para estudiantes', '11:00 am a 10:00 md.  Lunes a viernes', 'www.nacion.com'),
 (9, 1, 1, 1, 'Érase una vez', '3:00 a 5:00 pm.  Lunes a viernes', 'www.idp.com'),
 (10, 3, 1, 1, 'Érase una vez', '3:00 a 5:00 pm.  Lunes a viernes', 'www.idp.com'),
@@ -108,7 +108,7 @@ INSERT INTO `menu` (`id`, `poblacion`, `categoria`, `tipo`, `nombre`, `descripci
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `poblaciones`
+-- Table structure for table `poblaciones`
 --
 
 DROP TABLE IF EXISTS `poblaciones`;
@@ -119,7 +119,7 @@ CREATE TABLE IF NOT EXISTS `poblaciones` (
 ) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Volcado de datos para la tabla `poblaciones`
+-- Dumping data for table `poblaciones`
 --
 
 INSERT INTO `poblaciones` (`id`, `poblacion`) VALUES
@@ -130,7 +130,7 @@ INSERT INTO `poblaciones` (`id`, `poblacion`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tipos`
+-- Table structure for table `tipos`
 --
 
 DROP TABLE IF EXISTS `tipos`;
@@ -141,7 +141,7 @@ CREATE TABLE IF NOT EXISTS `tipos` (
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Volcado de datos para la tabla `tipos`
+-- Dumping data for table `tipos`
 --
 
 INSERT INTO `tipos` (`id`, `tipo`) VALUES
