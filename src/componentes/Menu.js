@@ -24,7 +24,7 @@ function Menu(props) {
     //Array filtrados docentes:
     const ofertaTelevisivaDocentes = filtrar(docentes, "categoria", "Oferta televisiva");
     const ofertaVirtualDocentes = filtrar(docentes, "categoria", "Oferta virtual");
-    const mepInformaDocentes = filtrar(docentes, "categoria", "Mep informa");
+    //const mepInformaDocentes = filtrar(docentes, "categoria", "Mep informa");
     
     
     //Array filtrados estudiantes:
@@ -33,7 +33,8 @@ function Menu(props) {
 
     //Array filtrados familias:
     const ofertaTelevisivaFamilias = filtrar(familias, "categoria", "Oferta televisiva");
-    const ofertaVirtualFamilias = filtrar(familias, "categoria", "Oferta virtual");
+    //const ofertaVirtualFamilias = filtrar(familias, "categoria", "Oferta virtual");
+    const mepInformaFamilias = filtrar(familias, "categoria", "Mep informa");
 
 
     return (
@@ -119,7 +120,15 @@ function Menu(props) {
                      {
                         //oferta virtual estudiantes
                     }
-                    <img className="img-fluid" src={imgOfertaVirtual} alt="oferta virtual" />
+                    {
+                        ofertaVirtualEstudiantes.length > 0 &&
+                            <img className="img-fluid" src={imgOfertaVirtual} alt="oferta virtual" />
+                    }
+                    {
+                        console.log("ofertaVirtualEstudiantes", ofertaVirtualEstudiantes)                        
+                    }
+                    
+
                     {
                         //Valida que el arreglo no esté vacio:
                         ofertaVirtualEstudiantes &&
@@ -162,6 +171,19 @@ function Menu(props) {
                             <TarjetaOfertas item={item} i={i} key={"virtualFamilia" + i} />                            
                         ))
                     */
+                    }
+                    <img className="img-fluid" src={imgMepInforma} alt="MEP informa" />
+                    {
+                        //FAMILIA - MEP informa 
+
+                        
+                     
+                        mepInformaFamilias &&
+                     
+                        mepInformaFamilias.map((item, i) => (
+                            <TarjetaOfertas item={item} i={i} key={"virtualFamilia" + i} />                            
+                        ))
+                    
                     }
                 </div>
 
