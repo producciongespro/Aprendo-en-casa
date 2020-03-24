@@ -1,10 +1,13 @@
     // var poblaciones=[];
     // var categorias=[];
     $(document).ready(function() {
-        $("#categorias").select(0);
+        $("#categorias select").val("0");
        obtenerPoblaciones();
        obtenerCategorias();
+       $("#banner").attr("src","img/encabezado_ch_aprendoencasa.png");
        $("#horarios_tv").hide();
+       $("#covid").hide();
+       $("#op-aprendo").addClass("menu-activo");
        $("#btnEnviarRecurso").click(function (e) { 
            e.preventDefault();
            formularioCovid();
@@ -13,6 +16,22 @@
            e.preventDefault();
            formularioRecursos();
        });
+       $("#op-aprendo").click(function (e) { 
+        e.preventDefault();
+        $("#banner").attr("src","img/encabezado_ch_aprendoencasa.png");
+        $("#aprendo").show();
+        $("#covid").hide();
+        $("#op-covid").removeClass("menu-activo");
+        $("#op-aprendo").addClass("menu-activo");
+    });
+       $("#op-covid").click(function (e) { 
+        e.preventDefault();
+        $("#banner").attr("src","img/encabezado_ch_recursos_covid19.png");
+        $("#covid").show();
+        $("#aprendo").hide();
+        $("#op-aprendo").removeClass("menu-activo");
+        $("#op-covid").addClass("menu-activo");
+    });
        $("#categorias").change(function (e) { 
            e.preventDefault();
            if ($("#categorias").val()==="1"){

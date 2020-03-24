@@ -21,11 +21,11 @@
 <body>
     <div class="row text-center">
         <div class="col-sm-12">
-             <img class="img img-fluid" src="img/encabezado_ch_aprendoencasa.png" alt="">
+             <img class="img img-fluid" src="img/encabezado_ch_recursos_covid19.png" alt="">
         </div>
     </div>
-   
-    <section style="margin-top: 25px;">
+
+    <section id="covid" style="margin-top: 25px;">
         <div class="container" id="contenedor">
             <h3>Nuevo recurso/enlace</h3>
             <form id="formulario2" action="">

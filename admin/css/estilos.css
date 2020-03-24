@@ -1,0 +1,13 @@
+.menu{
+    font-size: 3vh;
+    color: blueviolet;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.menu-activo
+    {
+        border-bottom-style: ridge;
+        border-bottom-color: coral;
+        border-bottom-width: 7px;
+    }

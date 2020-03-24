@@ -15,17 +15,21 @@
     <script src="js/main.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
     <!-- <link href="estilos.css" rel="stylesheet"> -->
-    <title>Nuevos recursos COVID-19</title>
+    <title>Nuevos recursos APRENDO EN CASA</title>
 </head>
 
 <body>
     <div class="row text-center">
         <div class="col-sm-12">
-             <img class="img img-fluid" src="img/encabezado_ch_aprendoencasa.png" alt="">
+             <img id="banner" class="img img-fluid" src="" alt="">
         </div>
     </div>
-   
-    <section style="margin-top: 25px;">
+    <div class="row text-center">
+       <div class="col-sm-12">
+           <span class="menu" id="op-aprendo">APRENDO EN CASA</span> <span id="op-covid" class="menu">ENLACES COVID-19</span>
+       </div>
+   </div>
+    <section id="aprendo" style="margin-top: 25px;">
         <div class="container" id="contenedor">
             <h3>Nuevo recurso/enlace</h3>
             <form id="formulario" action="">
@@ -82,6 +86,65 @@
                             
                             <div class="col-12 text-center"><br>
                             <button name="btnEnviar" class="btn btn-success" id="btnEnviar" type="submit">Enviar recurso</button>
+                            </div>
+                        </div>
+            </form><br>
+            <div id="divMensaje" class="alert alert-warning alert-dismissible fade" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+</button>
+    <span id="resultado"></span>
+</div>
+        </div>
+    </section>
+
+    <section id="covid" style="margin-top: 25px;">
+        <div class="container" id="contenedor">
+            <h3>Nuevo recurso/enlace</h3>
+            <form id="formulario2" action="">
+                <div class="form-group">
+                    <div class="row">
+                        <br>
+                        <div class="col-sm-12">
+                            <div class="selector-tipos">
+                                <label for="categorias">Ingrese el nombre del recurso</label><br>
+                                <input  type="text"  class="form-control" name="nombre" id="nombre"></input>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="col-sm-12">
+                            <div class="selector-tipos">
+                                <label for="categorias">Ingrese la descripción del recurso</label><br>
+                                <input  type="text"  class="form-control" name="descriptivo" id="descriptivo"></input>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="col-sm-12">
+                            <div class="selector-tipos">
+                                <label for="categorias">Ingrese la url del recurso</label><br>
+                                <input type="text" class=" form-control" name="url" id="url"></input>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="selector-tipos">
+                                <label for="categorias">Ingrese la url de la imagen</label><br>
+                                <input type="text" class=" form-control" name="urlImagen" id="urlImagen"></input>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="col-sm-12">
+                            <div class="selector-tipos">
+                                <label for="categorias">Ingrese clave</label><br>
+                                <input type="password" class=" form-control" name="clave" id="clave"></input>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-center">
+                            
+                            <div class="col-12 text-center"><br>
+                            <button name="btnEnviarRecurso" class="btn btn-success" id="btnEnviarRecurso" type="submit">Enviar enlace</button>
+                                <!-- <input  type="submit" class="btn btn-success" value="Enviar"> -->
                             </div>
                         </div>
             </form><br>
