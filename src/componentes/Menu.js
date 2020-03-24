@@ -191,11 +191,11 @@ function Menu(props) {
             </div>
 
     <div className="row">
-            <div className="col-sm-10">
-            <img className="img-fluid" src={imgGespro} alt="Banner Gespro" />
+            <div className="col-sm-8 mb-2">
+				<img className="img-fluid" src={imgGespro} alt="Banner Gespro" />
             </div>
-            <div className="col-sm-2">
-                <img src={imgLogo} alt="Imagen de logos"/>
+            <div className="col-sm-4 text-right">
+                <img className="img-fluid" src={imgLogo} alt="Imagen de logos"/>
             </div>
      </div>
      <br/>
