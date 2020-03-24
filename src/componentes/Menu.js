@@ -192,7 +192,7 @@ function Menu(props) {
 
     <div className="row">
             <div className="col-sm-10">
-            <img className="img-fluid hvr-bob" src={imgGespro} alt="Banner Gespro" />
+            <img className="img-fluid" src={imgGespro} alt="Banner Gespro" />
             </div>
             <div className="col-sm-2">
                 <img src={imgLogo} alt="Imagen de virus animado"/>
