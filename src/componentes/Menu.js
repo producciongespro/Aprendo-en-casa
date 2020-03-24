@@ -195,20 +195,11 @@ function Menu(props) {
             <img className="img-fluid" src={imgGespro} alt="Banner Gespro" />
             </div>
             <div className="col-sm-2">
-                <img src={imgLogo} alt="Imagen de virus animado"/>
+                <img src={imgLogo} alt="Imagen de logos"/>
             </div>
      </div>
-
-
-         <div className="row">
-            <div className="col-sm-10">
-            <strong className="creditos"> DIRECCIÓN DE RECURSOS TECNOLÓGICOS EN EDUCACIÓN <br/> DIRECCIÓN DE DESARROLLO CURRICULAR</strong>
-            </div>
-        </div>
-
-
-
-
+     <br/>
+         
         </div>
     )
 
