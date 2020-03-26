@@ -1,5 +1,5 @@
 import React from 'react';
-import imgVirus from '../assets/img/virus01.gif';
+import imgVirus from '../assets/img/ajax_loader.gif';
 
 
 function Splash() {
