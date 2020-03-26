@@ -195,7 +195,7 @@ function Menu(props) {
 				<img className="img-fluid" src={imgGespro} alt="Banner Gespro" />
             </div>
             <div className="col-sm-4 text-right">
-                <img className="img-fluid" src={imgLogo} alt="Imagen de logos"/>
+                <img className="img-fluid logos" src={imgLogo} alt="Imagen de logos"/>
             </div>
      </div>
      <br/>
