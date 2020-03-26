@@ -94,7 +94,7 @@ function Menu(props) {
                         
                         mepInformaDocentes &&
                         mepInformaDocentes.map((item, i) => (
-                            <TarjetaOfertas item={item} i={i} key={"mepInformaDoc" + i} />                            
+                            <TarjetaOfertas item={item} i={i} key={"mepInformaDoc " + i} />                            
                         ))
                         
                     }
