@@ -26,16 +26,17 @@ function Menu(props) {
     //Array filtrados docentes:
     const ofertaTelevisivaDocentes = filtrar(docentes, "categoria", "Oferta televisiva");
     const ofertaVirtualDocentes = filtrar(docentes, "categoria", "Oferta virtual");
-    //const mepInformaDocentes = filtrar(docentes, "categoria", "Mep informa");
+    const mepInformaDocentes = filtrar(docentes, "categoria", "Mep informa");
     
     
     //Array filtrados estudiantes:
     const ofertaTelevisivaEstudiantes = filtrar(estudiantes, "categoria", "Oferta televisiva");
     const ofertaVirtualEstudiantes = filtrar(estudiantes, "categoria", "Oferta virtual");
+    const mepInformaEstudiantes = filtrar(estudiantes, "categoria", "Mep informa");
 
     //Array filtrados familias:
     const ofertaTelevisivaFamilias = filtrar(familias, "categoria", "Oferta televisiva");
-    //const ofertaVirtualFamilias = filtrar(familias, "categoria", "Oferta virtual");
+    const ofertaVirtualFamilias = filtrar(familias, "categoria", "Oferta virtual");
     const mepInformaFamilias = filtrar(familias, "categoria", "Mep informa");
 
 
@@ -86,15 +87,16 @@ function Menu(props) {
 
                     {
                         //MEP informa
-                        //<img className="img-fluid" src={imgMepInforma} alt="MEP informa" />
+                        mepInformaDocentes > 0 &&
+                        <img className="img-fluid" src={imgMepInforma} alt="MEP informa" />
                     }                                     
                     {
-                        /*
+                        
                         mepInformaDocentes &&
                         mepInformaDocentes.map((item, i) => (
-                            <TarjetaOfertas item={item} i={i} key={"mepInforma" + i} />                            
+                            <TarjetaOfertas item={item} i={i} key={"mepInformaDoc" + i} />                            
                         ))
-                        */
+                        
                     }
 
 
@@ -140,6 +142,21 @@ function Menu(props) {
                         ))
 
                     }
+    
+                    {
+
+                        //MEP informa
+                        mepInformaEstudiantes > 0 &&
+                        <img className="img-fluid" src={imgMepInforma} alt="MEP informa" />
+                    }                                     
+                    {
+                        
+                        mepInformaEstudiantes &&
+                        mepInformaEstudiantes.map((item, i) => (
+                            <TarjetaOfertas item={item} i={i} key={"mepInformaESt" + i} />                            
+                        ))
+                        
+                    }
                 </div>
 
                 <div className="col-sm-4">
@@ -162,28 +179,23 @@ function Menu(props) {
                     }
                      {
                         //oferta virtual familia
-                        //<img className="img-fluid" src={imgOfertaVirtual} alt="oferta virtual" />
+                        <img className="img-fluid" src={imgOfertaVirtual} alt="oferta virtual" />
                     }
                     
                     {
-                     /*
-                        ofertaVirtualFamilias &&
                      
-                        ofertaVirtualFamilias.map((item, i) => (
-                            <TarjetaOfertas item={item} i={i} key={"virtualFamilia" + i} />                            
-                        ))
-                    */
+                        ofertaVirtualFamilias &&                     
+                            ofertaVirtualFamilias.map((item, i) => (
+                                <TarjetaOfertas item={item} i={i} key={"virtualFamilia" + i} />                            
+                            ))
+                    
                     }
                      <img className="img-fluid hvr-bob" src={imgMepInforma} alt="MEP informa" />
                     {
-                        //FAMILIA - MEP informa 
-
-                        
-                     
-                        mepInformaFamilias &&
-                     
+                        //FAMILIA - MEP informa                       
+                        mepInformaFamilias &&                     
                         mepInformaFamilias.map((item, i) => (
-                            <TarjetaOfertas item={item} i={i} key={"virtualFamilia" + i} />                            
+                            <TarjetaOfertas item={item} i={i} key={"mepInformaFam" + i} />                            
                         ))
                     
                     }
