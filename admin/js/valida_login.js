@@ -8,23 +8,30 @@ $(document).ready(function () {
 function enviarDatos() {  
     var usuario = $("#username").val();
     var clave = $("#password").val();
+	
         const datos = {
-            "usuario": usuario,
-            "clave" : clave
+            usuario: usuario,
+            clave : clave
         }
-        const url = 'login.php';
+        const url = './login.php';
+		
+		console.log(datos);
 
-        // request options
+        /* request options
         const opciones = {
             method: 'POST',
             dataType: 'json',
-            body: JSON.stringify(datos),
-            headers: {
+            body: JSON.stringify(datos)
+		}
+			headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
               }
-        }
-       // send POST request
+			        }	
+	
+		*/
+		
+       /* send POST request
         fetch(url, opciones)
             .then(res => res.json())
             .then(res => {
@@ -32,7 +39,18 @@ function enviarDatos() {
                     console.log("Redireccionando");
                     $(location).attr('href','admin.php');
                 }
-            });
+            });			
+		
+    });	
+	*/	
+		
+				axios.post(url, datos)
+				  .then(function (response) {
+					console.log(response);
+				  })
+				  .catch(function (error) {
+					console.log(error);
+				  });
            
             
 }

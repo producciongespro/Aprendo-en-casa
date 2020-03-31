@@ -3,6 +3,7 @@
 	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>Aprendo en casa - Administración</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script> 
 		<script src="js/valida_login.js"></script>
 	</head>
@@ -27,7 +28,7 @@
 		    <input type="password" class="form-control" id="password" name="password" placeholder="Contrase&ntilde;a">
 		  </div>
 
-		  <button type="submit" id="btn_entrar" class="btn btn-success">Entrar</button>
+		  <button type="button" id="btn_entrar" class="btn btn-success">Entrar</button>
 		</form>
 </div>
 <div class="col-md-3"></div>
