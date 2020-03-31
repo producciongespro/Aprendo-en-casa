@@ -2,8 +2,8 @@
     // var categorias=[];
     $(document).ready(function() {
         $("#categorias select").val("0");
-       obtenerPoblaciones();
-       obtenerCategorias();
+       obtenerPoblaciones2();
+       obtenerCategorias2();
        $("#banner").attr("src","img/encabezado_ch_aprendoencasa.png");
        $("#horarios_tv").hide();
        $("#covid").hide();
@@ -85,7 +85,7 @@ function formularioCovid() {
 
 
     
-function obtenerCategorias() {
+function obtenerCategorias2() {
       $.getJSON("obtener_categorias.php", function(data){
         console.log(data);
         $.each(data, function(i, valor){
@@ -94,7 +94,7 @@ function obtenerCategorias() {
       });
 }
 
-function obtenerPoblaciones() {
+function obtenerPoblaciones2() {
     $.getJSON("obtener_poblaciones.php", function(data){
         console.log(data);
         $.each(data, function(i, valor){

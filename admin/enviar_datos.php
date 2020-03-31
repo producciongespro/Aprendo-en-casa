@@ -12,7 +12,7 @@ if ($_POST) {
   $horario = utf8_decode($_POST['horario']);
   $clave = utf8_decode($_POST['clave']);
   if ($clave=="pepito") {
-       $insercion = "INSERT INTO `menu`(`poblacion`, `categoria`, `tipo`, `nombre`, `descripcion`, `link`) VALUES ('$poblacion','$categoria','$tipo','$nombre','$horario','$url')";
+       $insercion = "INSERT INTO `menu`(`id_poblacion`, `id_categoria`, `id_tipo`, `nombre`, `descripcion`, `link`) VALUES ('$poblacion','$categoria','$tipo','$nombre','$horario','$url')";
         // mysqli_query($conexion,$insercion);
         if ($conexion->query($insercion) === TRUE) {
             echo json_encode(array('error'=>'false','msj'=>'Recurso agregado satisfactoriamente'));
