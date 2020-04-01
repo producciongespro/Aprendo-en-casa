@@ -1,3 +1,9 @@
+<!-- <?php
+// session_start();
+// if(!isset($_SESSION["usuario"])){ //Si no ha iniciado sesi車n redirecciona a index.php
+//     header("Location: index.php");
+// }
+ ?>  -->
 <!DOCTYPE html>
 <html lang="es">
 
@@ -30,6 +36,16 @@
              <img id="banner" class="img img-fluid" src="" alt="">
         </div>
     </div>
+    <div class="row">
+        <div class="col-sm-8"></div> 
+          <div class="col-sm-4">
+          <form action='cerrar_sesion.php'>
+            <input id="btn_cerrar" type="submit" name="sesionDestroy" value="Cerrar sesion"/>
+          </form><br>
+      </div> 
+     
+    </div>
+
     <div class="row text-center">
        <div class="col-sm-12">
            <span class="menu" id="op-aprendo">APRENDO EN CASA</span> <span id="op-covid" class="menu">ENLACES COVID-19</span>

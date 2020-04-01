@@ -8,45 +8,38 @@ $(document).ready(function () {
 function enviarDatos() {  
     var usuario = $("#username").val();
     var clave = $("#password").val();
+//     const url = 'login.php';
+
+//        $.ajax({
+//         url: url,
+//         type: "POST",
+//         // dataType:'json',
+//         data: "usuario="+usuario+"&clave="+clave,
+//         success: function(resp){
+//             console.log(resp);
+//             $(location).attr('href','admin.php');
+//         },
+//         error: function (response) {
+//                         console.log(response);
+//         }
+// });
+            
 	
         const datos = {
             usuario: usuario,
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json;charset=UTF-8'
+              },
             clave : clave
         }
-        const url = './login.php';
-		
-		console.log(datos);
-
-        /* request options
-        const opciones = {
-            method: 'POST',
-            dataType: 'json',
-            body: JSON.stringify(datos)
-		}
-			headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-              }
-			        }	
-	
-		*/
-		
-       /* send POST request
-        fetch(url, opciones)
-            .then(res => res.json())
-            .then(res => {
-                if (res.error===false){
+        const url = './login.php';		
+				axios.post(url, datos)
+				//   .then(function (response) {
+                    .then(response => {
+                    console.log(response);
                     console.log("Redireccionando");
                     $(location).attr('href','admin.php');
-                }
-            });			
-		
-    });	
-	*/	
-		
-				axios.post(url, datos)
-				  .then(function (response) {
-					console.log(response);
 				  })
 				  .catch(function (error) {
 					console.log(error);

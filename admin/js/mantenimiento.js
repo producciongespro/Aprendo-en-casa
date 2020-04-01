@@ -165,17 +165,6 @@ const data = new FormData();
            "<th scope='text-center'>Eliminar</th>" +
          "</tr>" +
          "</thead>" +
-         "<tfoot>" +
-        " <tr>" +
-        "<th class='buscador' scope='col'>#</th>" +
-        "<th>nombre</th>" +
-        "<th>puesto</th>" +
-        "<th class=''>correo</th>" +
-        "<th class=''>teléfono</th>" +
-        "<th class='buscador'>editar</th>" +
-        "<th class='buscador'>eliminar</th>" +
-        " </tr>"+
-        " </tfoot>"+
          "</table>"
        ), tBody = $("<tbody></tbody>");
    
