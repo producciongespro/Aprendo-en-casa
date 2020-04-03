@@ -72,13 +72,13 @@ function formularioCovid() {
             success: function(response){
                 console.log(response.msj); 
                 $('#formulario2')[0].reset(); 
-                $("#resultado").html("<p>"+response.msj+ "</p>")  
-                $("#divMensaje").addClass("show");
+                $("#resultado2").html("<p>"+response.msj+ "</p>")  
+                $("#divMensaje2").addClass("show");
             },
             error: function(response){
                 console.log(response.msj);
-                $("#resultado").html("<p>"+response.msj+ "</p>")  
-                $("#divMensaje").addClass("show");
+                $("#resultado2").html("<p>"+response.msj+ "</p>")  
+                $("#divMensaje2").addClass("show");
             }
         });
 }

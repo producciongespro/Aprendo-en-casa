@@ -9,35 +9,35 @@
 			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 			  crossorigin="anonymous"></script>    
     <script>
-    $(document).ready(function () {       
+    // $(document).ready(function () {       
 
-        $( "#frmLogin" ).submit(function( event ) {            
+    //     $( "#frmLogin" ).submit(function( event ) {            
 
-            var $inputs = $('#frmLogin :input');            
-            var data = {};
-            $inputs.each(function() {
-                data[this.name] = $(this).val();                
-            });
-            //delete data.boton;
-            console.log(data);
+    //         var $inputs = $('#frmLogin :input');            
+    //         var data = {};
+    //         $inputs.each(function() {
+    //             data[this.name] = $(this).val();                
+    //         });
+    //         //delete data.boton;
+    //         console.log(data);
 
           
-            axios.post('./login2.php', data)
-                    .then((response) => {
-                    console.log(response.data );
-                    }, (error) => {
-                    console.log(error);
-                    });                      
-        event.preventDefault();  
-        });
+    //         axios.post('./login2.php', data)
+    //                 .then((response) => {
+    //                 console.log(response.data );
+    //                 }, (error) => {
+    //                 console.log(error);
+    //                 });                      
+    //     event.preventDefault();  
+    //     });
                   
-    });
+    // });
         
     </script>
     <title>Document</title>
 </head>
 <body>
-    <form id="frmLogin" method="POST" action="login2.php">
+    <form id="frmLogin" method="POST" action="login.php">
 
 
         Usuario:
@@ -46,7 +46,7 @@
         Clave: 
         <input type="password" name="clave" id="txtClave">
         <hr>
-        <button name="boton" type="submit">Ingresar </button>
+        <button name="boton" type="submit">Ingresar</button>
 
     </form>
     

@@ -1,9 +1,13 @@
-<!-- <?php
-// session_start();
-// if(!isset($_SESSION["usuario"])){ //Si no ha iniciado sesi車n redirecciona a index.php
-//     header("Location: index.php");
-// }
- ?>  -->
+<?php
+// Initialize the session
+session_start();
+ 
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: index.php");
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -26,21 +30,22 @@
     <script src="js/main.js"></script>
     <script src="js/mantenimiento.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
-    <!-- <link href="estilos.css" rel="stylesheet"> -->
+    <link href="css/estilos.css" rel="stylesheet">
     <title>Nuevos recursos APRENDO EN CASA</title>
 </head>
 
 <body>
     <div class="row text-center">
-        <div class="col-sm-12">
+        <div class="col-12">
              <img id="banner" class="img img-fluid" src="" alt="">
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-8"></div> 
-          <div class="col-sm-4">
+    <!-- <div class="col-sm-4"></div> -->
+        <div class="col-sm-4 text-center"></div> 
+          <div class="col-sm-8 text-right">
           <form action='cerrar_sesion.php'>
-            <input id="btn_cerrar" type="submit" name="sesionDestroy" value="Cerrar sesion"/>
+           Bienvenido <?php echo $_SESSION["username"]?> <input id="btn_cerrar" type="submit" name="sesionDestroy" value="Cerrar sesion"/>
           </form><br>
       </div> 
      
@@ -172,12 +177,12 @@
                             </div>
                         </div>
                         <br>
-                        <div class="col-sm-12">
+                        <!-- <div class="col-sm-12">
                             <div class="selector-tipos">
                                 <label for="categorias">Ingrese clave</label><br>
                                 <input type="password" class=" form-control" name="clave" id="clave"></input>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="row text-center">
@@ -240,12 +245,12 @@
                             </div>
                         </div>
                         <br>
-                        <div class="col-sm-12">
+                        <!-- <div class="col-sm-12">
                             <div class="selector-tipos">
                                 <label for="categorias">Ingrese clave</label><br>
                                 <input type="password" class=" form-control" name="clave" id="clave"></input>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="row text-center">
@@ -256,11 +261,11 @@
                             </div>
                         </div>
             </form><br>
-            <div id="divMensaje" class="alert alert-warning alert-dismissible fade" role="alert">
+            <div id="divMensaje2" class="alert alert-warning alert-dismissible fade" role="alert">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
   <span aria-hidden="true">&times;</span>
 </button>
-    <span id="resultado"></span>
+    <span id="resultado2"></span>
 </div>
         </div>
     </section>
