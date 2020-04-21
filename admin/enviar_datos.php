@@ -10,8 +10,8 @@ if ($_POST) {
   $nombre= utf8_decode($_POST['nombre']);
   $url= utf8_decode($_POST['url']);
   $horario = utf8_decode($_POST['horario']);
-  $clave = utf8_decode($_POST['clave']);
-  if ($clave=="pepito") {
+
+ 
        $insercion = "INSERT INTO `menu`(`id_poblacion`, `id_categoria`, `id_tipo`, `nombre`, `descripcion`, `link`) VALUES ('$poblacion','$categoria','$tipo','$nombre','$horario','$url')";
         // mysqli_query($conexion,$insercion);
         if ($conexion->query($insercion) === TRUE) {
@@ -20,11 +20,6 @@ if ($_POST) {
                 echo json_encode(array('error'=>'true','msj'=>$conexion->error)); 
             }
             mysqli_close($conexion);
-    }
-    
-     else{
-        echo json_encode(array('error'=>'true','msj'=>"Clave no válida")); 
-    } 
   }
    
 

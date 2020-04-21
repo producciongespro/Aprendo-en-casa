@@ -3,7 +3,7 @@ header('Access-Control-Allow-Origin: *');
 header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method");
 header("Content-Type: text/html; charset=utf-8");
 $method = $_SERVER['REQUEST_METHOD'];
-$sql= "SELECT menu.id, poblaciones.poblacion, categorias.categoria, tipos.tipo, menu.nombre, menu.descripcion, menu.link FROM menu INNER JOIN poblaciones ON poblaciones.id=menu.poblacion INNER JOIN categorias ON categorias.id=menu.categoria INNER JOIN tipos ON tipos.id=menu.tipo ORDER BY menu.id";
+$sql= "SELECT menu.id, poblaciones.poblacion, categorias.categoria, tipos.tipo, menu.nombre, menu.descripcion, menu.link FROM menu INNER JOIN poblaciones ON poblaciones.id=menu.id_poblacion INNER JOIN categorias ON categorias.id=menu.id_categoria INNER JOIN tipos ON tipos.id=menu.id_tipo ORDER BY menu.id";
 include "conectar.php";
 sleep(1);
 function desconectar($conexion){

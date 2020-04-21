@@ -8,8 +8,8 @@ if ($_POST) {
   $descriptivo= utf8_decode($_POST['descriptivo']);
   $url= utf8_decode($_POST['url']);
   $urlImagen = utf8_decode($_POST['urlImagen']);
-  $clave = utf8_decode($_POST['clave']);
-  if ($clave=="pepito") {
+
+
        $insercion = "INSERT INTO `enlaces`(`nombre`, `descriptivo`, `url`, `urlImagen`) VALUES ('$nombre','$descriptivo','$url','$urlImagen')";
         // mysqli_query($conexion,$insercion);
         if ($conexion->query($insercion) === TRUE) {
@@ -18,10 +18,5 @@ if ($_POST) {
                 echo json_encode(array('error'=>'true','msj'=>$conexion->error)); 
             }
             mysqli_close($conexion);
-    }
-    
-     else{
-        echo json_encode(array('error'=>'true','msj'=>"Clave no válida")); 
-    } 
   }
    
