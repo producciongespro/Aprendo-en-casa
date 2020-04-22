@@ -1,5 +1,6 @@
 import React from 'react';
 import TarjetaOfertas from '../componentes/TarjetaOfertas';
+import Destacados from '../componentes/Destacados';
 import filtrar from '../modulos/filtrar';
 
 //imagenes
@@ -13,22 +14,23 @@ import imgRecursosCovid from '../assets/img/btn_ch_recursos_covid19.png';
 import imgLogo from '../assets/img/logotipos_ch_mep_sinart_cafenal.png';
 import imgMepInforma from '../assets/img/btn_ch_mep_informa.png';
 import imgGespro from '../assets/img/banner_gespro.gif';
+import imgDestacados from '../assets/img/titulo_destacados.png';
 
 
 function Menu(props) {
     const docentes = filtrar(props.array, "poblacion", "Docentes");
-    const estudiantes = filtrar(props.array, "poblacion", "Estudiantes");  
+    const estudiantes = filtrar(props.array, "poblacion", "Estudiantes");
     const familias = filtrar(props.array, "poblacion", "Familias");
 
     console.log(docentes);
-    
-    
+
+
     //Array filtrados docentes:
     const ofertaTelevisivaDocentes = filtrar(docentes, "categoria", "Oferta televisiva");
     const ofertaVirtualDocentes = filtrar(docentes, "categoria", "Oferta virtual");
     const mepInformaDocentes = filtrar(docentes, "categoria", "Mep informa");
-    
-    
+
+
     //Array filtrados estudiantes:
     const ofertaTelevisivaEstudiantes = filtrar(estudiantes, "categoria", "Oferta televisiva");
     const ofertaVirtualEstudiantes = filtrar(estudiantes, "categoria", "Oferta virtual");
@@ -50,7 +52,18 @@ function Menu(props) {
             </div>
             <div className="row">
                 <div className="col-sm-12 text-right">
-                <img className="btn img-fluid btn-recursos hvr-push" src={imgRecursosCovid} onClick={props.handleCargarComponente} data-comp="enlaces" alt="Enlaces COVID-19" />        
+                    <img className="btn img-fluid btn-recursos hvr-push" src={imgRecursosCovid} onClick={props.handleCargarComponente} data-comp="enlaces" alt="Enlaces COVID-19" />
+                </div>
+            </div>
+            <br />
+            <div className="row">
+                <div className="col-sm-4 mb-2">
+                    <img className="img-fluid" src={imgDestacados} alt="destacados" />
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-sm-12">
+                    <Destacados array={props.destacados} />
                 </div>
             </div>
             <br />
@@ -80,7 +93,7 @@ function Menu(props) {
                     {
                         ofertaVirtualDocentes &&
                         ofertaVirtualDocentes.map((item, i) => (
-                            <TarjetaOfertas item={item} i={i} key={"virtualDocentes" + i} />                            
+                            <TarjetaOfertas item={item} i={i} key={"virtualDocentes" + i} />
                         ))
 
                     }
@@ -89,25 +102,25 @@ function Menu(props) {
                         //MEP informa
                         mepInformaDocentes > 0 &&
                         <img className="img-fluid" src={imgMepInforma} alt="MEP informa" />
-                    }                                     
+                    }
                     {
-                        
+
                         mepInformaDocentes &&
                         mepInformaDocentes.map((item, i) => (
-                            <TarjetaOfertas item={item} i={i} key={"mepInformaDoc " + i} />                            
+                            <TarjetaOfertas item={item} i={i} key={"mepInformaDoc " + i} />
                         ))
-                        
+
                     }
 
 
                 </div>
 
                 <div className="col-sm-4">
-                {
+                    {
                         //***********ESTUDIANTES
                     }
                     <img src={imgEstudiantes} alt="Imagen de estudiantes" />
-                    <br/>
+                    <br />
                     {
                         //oferta televisiva  estudiantes
                     }
@@ -117,45 +130,45 @@ function Menu(props) {
                         ofertaTelevisivaEstudiantes &&
                         //Mapeo del arreglo para renderizar
                         ofertaTelevisivaEstudiantes.map((item, i) => (
-                            <TarjetaOfertas item={item} i={i} key={"televisivaEstudiantes" + i} />                            
+                            <TarjetaOfertas item={item} i={i} key={"televisivaEstudiantes" + i} />
                         ))
 
                     }
-                     {
+                    {
                         //oferta virtual estudiantes
                     }
                     {
                         ofertaVirtualEstudiantes.length > 0 &&
-                            <img className="img-fluid" src={imgOfertaVirtual} alt="oferta virtual" />
+                        <img className="img-fluid" src={imgOfertaVirtual} alt="oferta virtual" />
                     }
                     {
-                        console.log("ofertaVirtualEstudiantes", ofertaVirtualEstudiantes)                        
+                        console.log("ofertaVirtualEstudiantes", ofertaVirtualEstudiantes)
                     }
-                    
+
 
                     {
                         //Valida que el arreglo no esté vacio:
                         ofertaVirtualEstudiantes &&
                         //Mapeo del arreglo para renderizar
                         ofertaVirtualEstudiantes.map((item, i) => (
-                            <TarjetaOfertas item={item} i={i} key={"virtualEstudiantes" + i} />                            
+                            <TarjetaOfertas item={item} i={i} key={"virtualEstudiantes" + i} />
                         ))
 
                     }
-    
+
                     {
 
                         //MEP informa
                         mepInformaEstudiantes > 0 &&
                         <img className="img-fluid" src={imgMepInforma} alt="MEP informa" />
-                    }                                     
+                    }
                     {
-                        
+
                         mepInformaEstudiantes &&
                         mepInformaEstudiantes.map((item, i) => (
-                            <TarjetaOfertas item={item} i={i} key={"mepInformaESt" + i} />                            
+                            <TarjetaOfertas item={item} i={i} key={"mepInformaESt" + i} />
                         ))
-                        
+
                     }
                 </div>
 
@@ -163,55 +176,55 @@ function Menu(props) {
                     <img src={imgFamilia} alt="Imagen de familia" />
 
                     {
-                            // FAMILIA
+                        // FAMILIA
 
                     }
 
-                <img className="img-fluid hvr-bob" src={imgOfertaTelevisiva} alt="oferta virtual" />
+                    <img className="img-fluid hvr-bob" src={imgOfertaTelevisiva} alt="oferta virtual" />
                     {
                         //Valida que el arreglo no esté vacio:
                         ofertaTelevisivaFamilias &&
                         //Mapeo del arreglo para renderizar
                         ofertaTelevisivaFamilias.map((item, i) => (
-                            <TarjetaOfertas item={item} i={i} key={"televisivaFamilia" + i} />                            
+                            <TarjetaOfertas item={item} i={i} key={"televisivaFamilia" + i} />
                         ))
 
                     }
-                     {
+                    {
                         //oferta virtual familia
                         <img className="img-fluid" src={imgOfertaVirtual} alt="oferta virtual" />
                     }
-                    
+
                     {
-                     
-                        ofertaVirtualFamilias &&                     
-                            ofertaVirtualFamilias.map((item, i) => (
-                                <TarjetaOfertas item={item} i={i} key={"virtualFamilia" + i} />                            
-                            ))
-                    
+
+                        ofertaVirtualFamilias &&
+                        ofertaVirtualFamilias.map((item, i) => (
+                            <TarjetaOfertas item={item} i={i} key={"virtualFamilia" + i} />
+                        ))
+
                     }
-                     <img className="img-fluid hvr-bob" src={imgMepInforma} alt="MEP informa" />
+                    <img className="img-fluid hvr-bob" src={imgMepInforma} alt="MEP informa" />
                     {
                         //FAMILIA - MEP informa                       
-                        mepInformaFamilias &&                     
+                        mepInformaFamilias &&
                         mepInformaFamilias.map((item, i) => (
-                            <TarjetaOfertas item={item} i={i} key={"mepInformaFam" + i} />                            
+                            <TarjetaOfertas item={item} i={i} key={"mepInformaFam" + i} />
                         ))
-                    
+
                     }
                 </div>
             </div>
 
-    <div className="row">
-            <div className="col-sm-8 mb-2">
-				<img className="img-fluid" src={imgGespro} alt="Banner Gespro" />
+            <div className="row">
+                <div className="col-sm-8 mb-2">
+                    <img className="img-fluid" src={imgGespro} alt="Banner Gespro" />
+                </div>
+                <div className="col-sm-4 text-right">
+                    <img className="img-fluid logos" src={imgLogo} alt="Imagen de logos" />
+                </div>
             </div>
-            <div className="col-sm-4 text-right">
-                <img className="img-fluid logos" src={imgLogo} alt="Imagen de logos"/>
-            </div>
-     </div>
-     <br/>
-         
+            <br />
+
         </div>
     )
 

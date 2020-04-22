@@ -4,8 +4,11 @@ import Splash from './componentes/Splash';
 import Menu from './componentes/Menu';
 import EnlacesCovid from './componentes/EnlacesCovid';
 
+import jsonDestacados from './DESTACADOS.json';
+
 var mainJson=null;
 var enlaces=null;
+var destacados=jsonDestacados;
 
 function App() {
   const [isReady, setIsReady ] = useState(false);
@@ -44,7 +47,7 @@ function App() {
         {
 
           isReady && nombreComponente === "menu" &&
-            <Menu array={mainJson} handleCargarComponente={handleCargarComponente} />                      
+            <Menu array={mainJson} destacados={destacados} handleCargarComponente={handleCargarComponente} />                      
         }
         {
           isReady && nombreComponente === "enlaces" &&

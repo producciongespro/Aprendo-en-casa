@@ -1,0 +1,10 @@
+.tarjeta {
+    width: 30%;
+    display: inline-table;
+    margin-left: 1em;
+}
+
+.img-previa {
+    width: 100%;
+    height: auto;
+}
