@@ -6,8 +6,8 @@ import EnlacesCovid from './componentes/EnlacesCovid';
 
 import jsonDestacados from './DESTACADOS.json';
 
-var mainJson=null;
-var enlaces=null;
+var enlacesMenu=null;
+var enlacesCovid=null;
 var destacados=jsonDestacados;
 
 function App() {
@@ -27,11 +27,11 @@ function App() {
 
   async function cargarDatos() {
     let response;
-      response = await fetch (config.apiServer+"recuperar_datos_covid.php");
-      mainJson = await response.json();    
-      console.log("mainJson",mainJson);
+      response = await fetch (config.apiServer+"obtener_menu.php");
+      enlacesMenu = await response.json();    
+      console.log("enlacesMenu",enlacesMenu);
       response = await fetch (config.apiServer+"recuperar_enlaces-info.php");
-      enlaces = await response.json();
+      enlacesCovid = await response.json();
       //console.log("enlaces", enlaces);
       setIsReady(true);
       
@@ -47,11 +47,11 @@ function App() {
         {
 
           isReady && nombreComponente === "menu" &&
-            <Menu array={mainJson} destacados={destacados} handleCargarComponente={handleCargarComponente} />                      
+            <Menu array={enlacesMenu} destacados={destacados} handleCargarComponente={handleCargarComponente} />                      
         }
         {
           isReady && nombreComponente === "enlaces" &&
-            <EnlacesCovid array={enlaces} handleCargarComponente={handleCargarComponente} />                      
+            <EnlacesCovid array={enlacesCovid} handleCargarComponente={handleCargarComponente} />                      
         }
 
 
