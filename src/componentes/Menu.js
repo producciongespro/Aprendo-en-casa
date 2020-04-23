@@ -22,7 +22,7 @@ function Menu(props) {
     const estudiantes = filtrar(props.array, "poblacion", "Estudiantes");
     const familias = filtrar(props.array, "poblacion", "Familias");
 
-    console.log(docentes);
+    //console.log(docentes);
 
 
     //Array filtrados docentes:
