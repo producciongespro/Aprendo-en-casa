@@ -44,7 +44,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <!-- <div class="col-sm-4"></div> -->
         <div class="col-sm-4 text-center"></div> 
           <div class="col-sm-8 text-right">
-          <form action='cerrar_sesion.php'>
+          <form action='../webservices/cerrar_sesion.php'>
            Bienvenido <?php echo $_SESSION["username"]?> <input id="btn_cerrar" type="submit" name="sesionDestroy" value="Cerrar sesion"/>
           </form><br>
       </div> 

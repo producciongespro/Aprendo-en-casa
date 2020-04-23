@@ -36,14 +36,14 @@ $(document).ready(function () {
 });
 
 function obtenerPoblaciones() {
-    $.getJSON("obtener_poblaciones.php", function(data){
+    $.getJSON("../webservices/obtener_poblaciones.php", function(data){
         $.each(data, function(i, valor){
             $("#poblacion").append("<option value=" + valor.id  + ">" +valor.poblacion + "</option>");
         });
     });
 }
 function obtenerCategorias() {
-    $.getJSON("obtener_categorias.php", function(data){
+    $.getJSON("../webservices/obtener_categorias.php", function(data){
 
       $.each(data, function(i, valor){
           $("#categoria").append("<option value=" + valor.id  + ">" +valor.categoria + "</option>");
@@ -52,7 +52,7 @@ function obtenerCategorias() {
 }
 
 function obtenerTipos() {
-    $.getJSON("obtener_tipos.php", function(data){    
+    $.getJSON("../webservices/obtener_tipos.php", function(data){    
       $.each(data, function(i, valor){
           $("#tipo").append("<option value=" + valor.id  + ">" +valor.tipo + "</option>");
       });
@@ -70,7 +70,7 @@ function editarMenu(id,tabla) {
   data.append("id_categoria",$("#categoria").val());
   data.append("link",$("#link").val());
   $.ajax({
-    url: "actualizar_menu.php?tabla="+tabla,
+    url: "../webservices/actualizar_menu.php?tabla="+tabla,
     type: 'POST',
     data: data,
     //dataType:'json',
@@ -97,7 +97,7 @@ function eliminarMenu(id,tabla) {
   data.append("id",id);
   data.append("tabla",tabla);
   $.ajax({
-    url: "eliminar_registro.php",
+    url: "../webservices/eliminar_registro.php",
     type: 'POST',
     data: data,
     //dataType:'json',
@@ -132,7 +132,7 @@ function eliminarMenu(id,tabla) {
 function realizaProceso(){
 
 const data = new FormData();
- url= 'obtener_menu.php';
+ url= '../webservices/obtener_menu.php';
  fetch( url)
     .then(function(response) {
         return response.json();

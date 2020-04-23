@@ -9,7 +9,7 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
 }
  
 // Include config file
-require_once "conectar.php";
+require_once "../webservices/conectar.php";
 $link=conectarDB();
 // Define variables and initialize with empty values
 $username = $password = "";

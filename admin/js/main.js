@@ -47,7 +47,7 @@ function formularioRecursos() {
           $.ajax({
             type: 'POST',
             dataType: 'json',
-            url: "enviar_datos.php",
+            url: "../webservices/enviar_datos.php",
             data: $('#formulario').serialize(),
             success: function(response){
                 console.log(response.msj); 
@@ -67,7 +67,7 @@ function formularioCovid() {
         $.ajax({
             type: 'POST',
             dataType: 'json',
-            url: "enviar_recursos.php",
+            url: "../webservices/enviar_recursos.php",
             data: $("#formulario2").serialize(),
             success: function(response){
                 console.log(response.msj); 
@@ -86,7 +86,7 @@ function formularioCovid() {
 
     
 function obtenerCategorias2() {
-      $.getJSON("obtener_categorias.php", function(data){
+      $.getJSON("../webservices/obtener_categorias.php", function(data){
         console.log(data);
         $.each(data, function(i, valor){
             $("#categorias").append("<option value=" + valor.id  + ">" +valor.categoria + "</option>");
@@ -95,7 +95,7 @@ function obtenerCategorias2() {
 }
 
 function obtenerPoblaciones2() {
-    $.getJSON("obtener_poblaciones.php", function(data){
+    $.getJSON("../webservices/obtener_poblaciones.php", function(data){
         console.log(data);
         $.each(data, function(i, valor){
             $("#poblaciones").append("<option value=" + valor.id  + ">" +valor.poblacion + "</option>");
