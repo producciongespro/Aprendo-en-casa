@@ -1,15 +1,10 @@
 [
     {
         "nombre": "Fomento a la lectura",
-        "urlImg": "https://www.mep.go.cr/sites/default/files/imagecache/banner_novedades/novedades/educacion-distancia.png",
-        "url": "https://www.nacion.com/",
-        "descripcion": "lad asdld asd afsdg dfg df gdfg df g dfg fd g  dfgdfg gdf gdefr."
-    },
-    {
-        "nombre": "Fomento a la lectura",
-        "urlImg": "https://www.mep.go.cr/sites/default/files/imagecache/banner_novedades/novedades/Concursos-2020.png",
-        "url": "https://www.nacion.com/",
-        "descripcion": "lad asdld asd afsdg dfg df gdfg df g dfg fd g  dfgdfg gdf gdefr."
+        "urlImg": "https://recursos.mep.go.cr/2020/aprendoencasa/assets/img/fomento_lectura.png",
+        "url": "https://www.mep.go.cr/educatico/politica-fomento-lectura",
+        "descripcion": "prueba"
     }
+    
 
 ]
