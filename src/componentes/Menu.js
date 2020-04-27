@@ -61,10 +61,8 @@ function Menu(props) {
                     <img className="img-fluid" src={imgDestacados} alt="destacados" />
                 </div>
             </div>
-            <div className="row">
-                <div className="col-sm-12">
-                    <Destacados array={props.destacados} />
-                </div>
+            <div className="row">                
+                    <Destacados array={props.destacados} />                
             </div>
             <br />
 
