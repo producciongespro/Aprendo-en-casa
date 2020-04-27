@@ -46,20 +46,18 @@ function Menu(props) {
         <div className="container">
             <br />
             <div className="row">
-                <div className="col-sm-12 encabAprend">
+                <div className="col-sm-10 encabAprend">
                     <img className="img-fluid" src={imgEncabezado} alt="Imagen de títiulo" />
                 </div>
-            </div>
-            <div className="row">
-                <div className="col-sm-12 text-right">
-                    <img className="btn img-fluid btn-recursos hvr-push" src={imgRecursosCovid} onClick={props.handleCargarComponente} data-comp="enlaces" alt="Enlaces COVID-19" />
+                <div className="col-sm-2 pt-4">
+                    <img className="btn img-fluid btn-recursos" src={imgRecursosCovid} onClick={props.handleCargarComponente} data-comp="enlaces" alt="Enlaces COVID-19" />
                 </div>
-            </div>
+            </div>            
             <br />
             <div className="row">
                 <div className="col-sm-4 mb-2">
                     <img className="img-fluid" src={imgDestacados} alt="destacados" />
-                </div>
+                </div>                
             </div>
             <div className="row">                
                     <Destacados array={props.destacados} />                

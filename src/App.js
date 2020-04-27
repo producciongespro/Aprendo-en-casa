@@ -48,6 +48,7 @@ function App() {
 
           isReady && nombreComponente === "menu" &&
             <Menu array={enlacesMenu} destacados={destacados} handleCargarComponente={handleCargarComponente} />                      
+          
         }
         {
           isReady && nombreComponente === "enlaces" &&
