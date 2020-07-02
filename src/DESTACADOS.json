@@ -6,9 +6,15 @@
         "descripcion": "prueba"
     },
     {
-        "nombre": "Fomento a la lectura",
+        "nombre": "Plaza Sesamo",
         "urlImg": "https://recursos.mep.go.cr/2020/aprendoencasa/assets/img/plazaSesamo2.png",
         "url": "https://costaricamedios.cr/sesamo",
         "descripcion": "prueba2"
-    }  
+    },
+    {
+        "nombre": "Guías aprendizaje base",
+        "urlImg": "https://recursos.mep.go.cr/2020/aprendoencasa/assets/img/ap_base2020.jpg",
+        "url": "http://www.ddc.mep.go.cr/estrategia-covid19/guias-aprendizajes-base",
+        "descripcion": "prueba2"
+    }   
 ]
