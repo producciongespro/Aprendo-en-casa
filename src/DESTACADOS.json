@@ -3,18 +3,18 @@
         "nombre": "Fomento a la lectura",
         "urlImg": "https://recursos.mep.go.cr/2020/aprendoencasa/assets/img/fomento_lectura2.png",
         "url": "http://www.mep.go.cr/plan-virtual-fomento-lectura",
-        "descripcion": "prueba"
+        "descripcion": "Imagen que enlace al sitio del Plan de Fomento a la lectura del MEP"
     },
     {
         "nombre": "Plaza Sesamo",
         "urlImg": "https://recursos.mep.go.cr/2020/aprendoencasa/assets/img/plazaSesamo2.png",
         "url": "https://costaricamedios.cr/sesamo",
-        "descripcion": "prueba2"
+        "descripcion": "Imagen que enlace al sitio de SINART con los programas de plaza Sésamo"
     },
     {
         "nombre": "Guías aprendizaje base",
         "urlImg": "https://recursos.mep.go.cr/2020/aprendoencasa/assets/img/ap_base2020.jpg",
         "url": "http://www.ddc.mep.go.cr/estrategia-covid19/plantillas-aprendizajes-base-2020",
-        "descripcion": "prueba2"
+        "descripcion": "Imagen que enlace al sitio del MEP para descargar las plantillas de aprendizaje Base 2020"
     }   
 ]
