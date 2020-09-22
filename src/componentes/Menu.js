@@ -45,20 +45,39 @@ function Menu(props) {
     return (
         <div className="container">
             <br />
+
             <div className="row">
                 <div className="col-sm-10 encabAprend">
-                    <img className="img-fluid" src={imgEncabezado} alt="Imagen de títiulo" />
+                    <img 
+                    tabIndex="1" role="banner"
+                    className="img-fluid" 
+                    src={imgEncabezado} 
+                    alt="Banner de Aprendo en casa" />
                 </div>
+
                 <div className="col-sm-2 pt-4">
-                    <img className="btn img-fluid btn-recursos" src={imgRecursosCovid} onClick={props.handleCargarComponente} data-comp="enlaces" alt="Enlaces COVID-19" />
+                    <img 
+                     tabIndex="7" role="button"
+                    className="btn img-fluid btn-recursos" 
+                    src={imgRecursosCovid} 
+                    onClick={props.handleCargarComponente} 
+                    data-comp="enlaces" 
+                    alt="Enlaces COVID-19" />
                 </div>
-            </div>            
+            </div>
+
+
             <br />
             <div className="row">
                 <div className="col-sm-4 mb-2">
-                    <img className="img-fluid" src={imgDestacados} alt="destacados" />
+                    <img 
+                    tabIndex="2" role="button"
+                    className="img-fluid" 
+                    src={imgDestacados} 
+                    alt="destacados" />
                 </div>                
             </div>
+
             <div className="row">                
                     <Destacados array={props.destacados} />                
             </div>
@@ -69,12 +88,20 @@ function Menu(props) {
                     {
                         //***********DOCENTES
                     }
-                    <img className="img-fluid" src={imgDocentes} alt="Imagen de docentes" />
+                    <img 
+                    tabIndex="3" role="heading" aria-level="1"
+                    className="img-fluid" 
+                    src={imgDocentes} 
+                    alt="Oferta para los Docentes" />
                     <br />
                     {
                         //oferta televisiva docentes
                     }
-                    <img className="img-fluid hvr-bob" src={imgOfertaTelevisiva} alt="oferta televisiva" />
+                    <img 
+                    tabIndex="3" role="heading" aria-level="2"
+                    className="img-fluid hvr-bob" 
+                    src={imgOfertaTelevisiva} 
+                    alt="oferta televisiva Docentes" />
                     {
                         ofertaTelevisivaDocentes &&
                         ofertaTelevisivaDocentes.map((item, i) => (
@@ -85,7 +112,11 @@ function Menu(props) {
                     {
                         //oferta Virtual
                     }
-                    <img className="img-fluid hvr-bob" src={imgOfertaVirtual} alt="Oferta televisiva" />
+                    <img 
+                    tabIndex="3" role="heading" aria-level="3"
+                    className="img-fluid hvr-bob" 
+                    src={imgOfertaVirtual} 
+                    alt="Oferta Virtual Docentes" />
                     {
                         ofertaVirtualDocentes &&
                         ofertaVirtualDocentes.map((item, i) => (
@@ -97,7 +128,11 @@ function Menu(props) {
                     {
                         //MEP informa
                         mepInformaDocentes > 0 &&
-                        <img className="img-fluid" src={imgMepInforma} alt="MEP informa" />
+                        <img 
+                        tabIndex="3" role="heading" aria-level="4"
+                        className="img-fluid" 
+                        src={imgMepInforma} 
+                        alt="MEP informa Docentes" />
                     }
                     {
 
@@ -111,16 +146,27 @@ function Menu(props) {
 
                 </div>
 
+
+
+
+
                 <div className="col-sm-4">
                     {
                         //***********ESTUDIANTES
                     }
-                    <img src={imgEstudiantes} alt="Imagen de estudiantes" />
+                    <img 
+                    tabIndex="4" role="heading" aria-level="1"
+                    src={imgEstudiantes} 
+                    alt="Oferta para la Estudiantes" />
                     <br />
                     {
                         //oferta televisiva  estudiantes
                     }
-                    <img className="img-fluid hvr-bob" src={imgOfertaTelevisiva} alt="oferta virtual" />
+                    <img 
+                    tabIndex="4" role="heading" aria-level="2"
+                    className="img-fluid hvr-bob" 
+                    src={imgOfertaTelevisiva} 
+                    alt="Oferta Televisiva Estudiantes" />
                     {
                         //Valida que el arreglo no esté vacio:
                         ofertaTelevisivaEstudiantes &&
@@ -135,7 +181,11 @@ function Menu(props) {
                     }
                     {
                         ofertaVirtualEstudiantes.length > 0 &&
-                        <img className="img-fluid" src={imgOfertaVirtual} alt="oferta virtual" />
+                        <img 
+                        tabIndex="4" role="heading" aria-level="3"
+                        className="img-fluid" 
+                        src={imgOfertaVirtual} 
+                        alt="oferta virtual Estudiantes" />
                     }
                     {
                         console.log("ofertaVirtualEstudiantes", ofertaVirtualEstudiantes)
@@ -156,7 +206,11 @@ function Menu(props) {
 
                         //MEP informa
                         mepInformaEstudiantes > 0 &&
-                        <img className="img-fluid" src={imgMepInforma} alt="MEP informa" />
+                        <img 
+                        tabIndex="4" role="heading" aria-level="4"
+                        className="img-fluid" 
+                        src={imgMepInforma} 
+                        alt="MEP informa Estudiantes" />
                     }
                     {
 
@@ -169,14 +223,21 @@ function Menu(props) {
                 </div>
 
                 <div className="col-sm-4">
-                    <img src={imgFamilia} alt="Imagen de familia" />
+                    <img 
+                    tabIndex="5" role="heading" aria-level="1"
+                    src={imgFamilia} 
+                    alt="Oferta para la Familia" />
 
                     {
                         // FAMILIA
 
                     }
 
-                    <img className="img-fluid hvr-bob" src={imgOfertaTelevisiva} alt="oferta virtual" />
+                    <img 
+                    tabIndex="5" role="heading" aria-level="2"
+                    className="img-fluid hvr-bob" 
+                    src={imgOfertaTelevisiva} 
+                    alt="oferta virtual Familia" />
                     {
                         //Valida que el arreglo no esté vacio:
                         ofertaTelevisivaFamilias &&
@@ -188,7 +249,11 @@ function Menu(props) {
                     }
                     {
                         //oferta virtual familia
-                        <img className="img-fluid" src={imgOfertaVirtual} alt="oferta virtual" />
+                        <img 
+                        tabIndex="5" role="heading" aria-level="3"
+                        className="img-fluid" 
+                        src={imgOfertaVirtual} 
+                        alt="oferta virtual Familia" />
                     }
 
                     {
@@ -199,7 +264,11 @@ function Menu(props) {
                         ))
 
                     }
-                    <img className="img-fluid hvr-bob" src={imgMepInforma} alt="MEP informa" />
+                    <img 
+                    tabIndex="5" role="heading" aria-level="4"
+                    className="img-fluid hvr-bob" 
+                    src={imgMepInforma} 
+                    alt="MEP informa Familia" />
                     {
                         //FAMILIA - MEP informa                       
                         mepInformaFamilias &&
@@ -213,10 +282,19 @@ function Menu(props) {
 
             <div className="row">
                 <div className="col-sm-8 mb-2">
-                    <img className="img-fluid" src={imgGespro} alt="Banner Gespro" />
+                    <img 
+                    tabIndex="6" 
+                    className="img-fluid" 
+                    src={imgGespro} 
+                    alt="Banner Gespro" />
                 </div>
+
                 <div className="col-sm-4 text-right">
-                    <img className="img-fluid logos" src={imgLogo} alt="Imagen de logos" />
+                    <img 
+                    tabIndex="6" 
+                    className="img-fluid logos" 
+                    src={imgLogo} 
+                    alt="Logos del MEP,Canal 13, Café Nacional, y UNED "/>
                 </div>
             </div>
             <br />
