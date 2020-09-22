@@ -57,12 +57,13 @@ function Menu(props) {
 
                 <div className="col-sm-2 pt-4">
                     <img 
-                     tabIndex="7" role="button"
+                    tabIndex="7" role="button"
                     className="btn img-fluid btn-recursos" 
                     src={imgRecursosCovid} 
                     onClick={props.handleCargarComponente} 
+                    onKeyPress={props.handleCargarComponente} 
                     data-comp="enlaces" 
-                    alt="Enlaces COVID-19" />
+                    alt="Enlace a una página para ver recursos COVID-19" />
                 </div>
             </div>
 
@@ -74,14 +75,15 @@ function Menu(props) {
                     tabIndex="2" role="button"
                     className="img-fluid" 
                     src={imgDestacados} 
-                    alt="destacados" />
+                    alt="Sección de destacados" />
                 </div>                
             </div>
 
-            <div className="row">                
-                    <Destacados array={props.destacados} />                
+            <div className="row"   >
+                          
+                    <Destacados  array={props.destacados }/>                
             </div>
-            <br />
+            <br />  
 
             <div className="row">
                 <div className="col-sm-4">
@@ -105,7 +107,11 @@ function Menu(props) {
                     {
                         ofertaTelevisivaDocentes &&
                         ofertaTelevisivaDocentes.map((item, i) => (
-                            <TarjetaOfertas item={item} i={i} key={"televisivaDocentes" + i} />
+                            <TarjetaOfertas 
+                            item={item} 
+                            i={i} 
+                            key={"televisivaDocentes" + i} 
+                           />
                         ))
 
                     }
