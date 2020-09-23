@@ -106,10 +106,10 @@ function Menu(props) {
                     alt="oferta televisiva Docentes" />
                     {
                         ofertaTelevisivaDocentes &&
-                        ofertaTelevisivaDocentes.map((item, i) => (
+                        ofertaTelevisivaDocentes.map ((item, i)=>  (
                             <TarjetaOfertas 
                             item={item} 
-                            i={i} 
+                            i={i }
                             key={"televisivaDocentes" + i} 
                            />
                         ))

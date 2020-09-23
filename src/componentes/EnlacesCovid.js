@@ -8,15 +8,20 @@ function EnlacesCovid (props) {
         <div className="container">
            <div className="row">
                 <div className="col-sm-12 encabRecursos mt-1">
-                    <img className="img-fluid encab" src={imgEncabezadoRec} alt="Imagen de Encabezado" />
+                    <img 
+                    tabIndex="1" role="banner"
+                    className="img-fluid encab" 
+                    src={imgEncabezadoRec} 
+                    alt="Banner de Recursos Covid" />
                 </div>
             </div>
                 
             <div className="row my-3">
                 <div className="col-sm-12 hvr-wobble-horizontal text-center img-fluid btn-volver">
                     <img 
+                        tabIndex="1" role="button"
                         src={imgVolver}
-                        alt="botón volver" 
+                        alt="volver a la página de aprendo en casa" 
                         data-comp="menu" 
                         onClick={props.handleCargarComponente}
                     />
@@ -26,7 +31,10 @@ function EnlacesCovid (props) {
             
             <div className="row">
                 <div className="col-sm-12">
-                    <strong className="indicaciones">Conjunto de recursos en video y pdf, para apoyar en la comprensión del porqué y cómo actuar ante el estado de emergencia COVID-19 en nuestro país.</strong>
+                    <strong 
+                    tabIndex="1" 
+                    className="indicaciones">Conjunto de recursos en video y pdf, para apoyar en la comprensión del porqué y cómo actuar ante el estado de emergencia COVID-19 en nuestro país.
+                    </strong>
                 </div>
             </div>
             <hr/>
@@ -37,14 +45,17 @@ function EnlacesCovid (props) {
                 <div key={"tarjeta" + i} className="col-sm-4 my-2">
                 <div className="card">
                     <img
+                        tabIndex="2"
                         src={item.urlImagen}
                         className="card-img-top"
                         alt={"imagen previa del recurso " + item.nombre}
                     />
                     <div className="card-body">
-                        <a href={item.url}
+                        <a 
+                        tabIndex="2"
+                        href={item.url}
                          target="_blank"
-                         rel="noopener noreferrer"
+                         rel="noopener noreferrer"      
                         >
                             <h5 className="card-title">
                                 {item.nombre}
@@ -56,6 +67,7 @@ function EnlacesCovid (props) {
                     </div>
                     <div className="card-body">                        
                         <a
+                            tabIndex="2"
                             href={item.url}
                             className="card-link"
                             target="_blank"
