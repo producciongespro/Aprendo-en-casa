@@ -58,8 +58,8 @@ function Menu(props) {
                 <div className="col-sm-2 pt-4">
                     <img 
                     tabIndex="7" role="button"
-                    className="btn img-fluid btn-recursos" 
-                    src={imgRecursosCovid} 
+                    className="btn img-fluid btn-recursos"
+                     src={imgRecursosCovid} 
                     onClick={props.handleCargarComponente} 
                     onKeyPress={props.handleCargarComponente} 
                     data-comp="enlaces" 
@@ -164,6 +164,7 @@ function Menu(props) {
                         //***********ESTUDIANTES
                     }
                     <img 
+                    className="img-fluid"
                     tabIndex="4" role="heading" aria-level="1"
                     src={imgEstudiantes} 
                     alt="Oferta para la Estudiantes" />
@@ -208,7 +209,6 @@ function Menu(props) {
                         ofertaVirtualEstudiantes.map((item, i) => (
                             <TarjetaOfertas item={item} i={i} key={"virtualEstudiantes" + i} />
                         ))
-
                     }
 
                     {
@@ -233,6 +233,7 @@ function Menu(props) {
 
                 <div className="col-sm-4">
                     <img 
+                    className="img-fluid"
                     tabIndex="5" role="heading" aria-level="1"
                     src={imgFamilia} 
                     alt="Oferta para la Familia" />
