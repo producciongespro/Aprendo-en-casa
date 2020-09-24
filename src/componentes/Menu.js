@@ -63,7 +63,9 @@ function Menu(props) {
                     onClick={props.handleCargarComponente} 
                     onKeyPress={props.handleCargarComponente} 
                     data-comp="enlaces" 
-                    alt="Enlace a una página para ver recursos COVID-19" />
+                    alt="Enlace a una página para ver recursos COVID-19" 
+                    title="Abre en una ventana nueva"
+                    />
                 </div>
             </div>
 
@@ -72,14 +74,15 @@ function Menu(props) {
             <div className="row">
                 <div className="col-sm-4 mb-2">
                     <img 
-                    tabIndex="2" role="button"
+                    tabIndex="2"
                     className="img-fluid" 
                     src={imgDestacados} 
-                    alt="Sección de destacados" />
+                    alt="Sección de destacados" 
+                            />
                 </div>                
             </div>
 
-            <div className="row"   >
+            <div className="row" >
                           
                     <Destacados  array={props.destacados }/>                
             </div>

@@ -45,35 +45,39 @@ function EnlacesCovid (props) {
                 <div key={"tarjeta" + i} className="col-sm-4 my-2">
                 <div className="card">
                     <img
-                        tabIndex="2"
                         src={item.urlImagen}
                         className="card-img-top"
-                        alt={"imagen previa del recurso " + item.nombre}
+                        alt={"imagen previa del recurso" + item.nombre}
                     />
                     <div className="card-body">
                         <a 
                         tabIndex="2"
                         href={item.url}
                          target="_blank"
+                         alt= "Visitar recurso en una ventana nueva"
                          rel="noopener noreferrer"      
                         >
-                            <h5 className="card-title">
-                                {item.nombre}
-                            </h5>
+                            <h1 className="card-title textEnc" 
+                            title="Abre el enlace en una ventana nueva">
+                               {item.nombre}
+                            </h1>
                         </a>
-                        <p className="card-text">
-                            {item.descriptivo}
+                        <p className="card-text"
+                        tabIndex="2"
+                        >
+                            {item.descriptivo }
                         </p>
                     </div>
                     <div className="card-body">                        
                         <a
                             tabIndex="2"
+                            title="desde una ventana nueva"
                             href={item.url}
                             className="card-link"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            Ver recurso <i className="fas fa-eye" ></i>                                    
+                            Ver recurso<i className="fas fa-eye" ></i>                                    
                     </a>
                     </div>
                 </div>
