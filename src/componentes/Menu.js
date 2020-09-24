@@ -43,7 +43,10 @@ function Menu(props) {
 
 
     return (
-        <div className="container">
+        <div 
+        className="container" 
+        title="Aprendo en casa en un sitio que tiene como fin proveer orientaciones, guías específicas y recursos de apoyo a la comunidad educativa nacional, ante la suspensión de lecciones en centros educativos, a raíz de la declaratoria de Emergencia Nacional provocada por el COVID 19.">
+            
             <br />
 
             <div className="row">
@@ -53,6 +56,7 @@ function Menu(props) {
                     className="img-fluid" 
                     src={imgEncabezado} 
                     alt="Banner de Aprendo en casa" />
+    
                 </div>
 
                 <div className="col-sm-2 pt-4">
@@ -247,7 +251,7 @@ function Menu(props) {
                     tabIndex="5" role="heading" aria-level="2"
                     className="img-fluid hvr-bob" 
                     src={imgOfertaTelevisiva} 
-                    alt="oferta virtual Familia" />
+                    alt="oferta televisiva Familia" />
                     {
                         //Valida que el arreglo no esté vacio:
                         ofertaTelevisivaFamilias &&
