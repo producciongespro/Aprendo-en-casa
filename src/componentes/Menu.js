@@ -93,12 +93,13 @@ function Menu(props) {
             <br />  
 
             <div className="row">
-                <div className="col-sm-4">
+                <div className="col-sm-4" >
                     {
                         //***********DOCENTES
                     }
                     <img 
-                    tabIndex="3" role="heading" aria-level="1"
+                    tabIndex="3"
+                    role="heading" aria-level="1"
                     className="img-fluid" 
                     src={imgDocentes} 
                     alt="Oferta para los Docentes" />
@@ -107,7 +108,8 @@ function Menu(props) {
                         //oferta televisiva docentes
                     }
                     <img 
-                    tabIndex="3" role="heading" aria-level="2"
+                    tabIndex="3"
+                    role="heading" aria-level="2"
                     className="img-fluid hvr-bob" 
                     src={imgOfertaTelevisiva} 
                     alt="oferta televisiva Docentes" />
@@ -115,6 +117,7 @@ function Menu(props) {
                         ofertaTelevisivaDocentes &&
                         ofertaTelevisivaDocentes.map ((item, i)=>  (
                             <TarjetaOfertas 
+                            tabIndex="3"
                             item={item} 
                             i={i }
                             key={"televisivaDocentes" + i} 
@@ -126,14 +129,20 @@ function Menu(props) {
                         //oferta Virtual
                     }
                     <img 
-                    tabIndex="3" role="heading" aria-level="3"
+                    tabIndex="3"
+                    role="heading" aria-level="3"
                     className="img-fluid hvr-bob" 
                     src={imgOfertaVirtual} 
                     alt="Oferta Virtual Docentes" />
                     {
                         ofertaVirtualDocentes &&
                         ofertaVirtualDocentes.map((item, i) => (
-                            <TarjetaOfertas item={item} i={i} key={"virtualDocentes" + i} />
+                            <TarjetaOfertas 
+                            tabIndex="3"
+                            item={item} 
+                            i={i} 
+                            key={"virtualDocentes" + i} 
+                            />
                         ))
 
                     }
@@ -151,7 +160,11 @@ function Menu(props) {
 
                         mepInformaDocentes &&
                         mepInformaDocentes.map((item, i) => (
-                            <TarjetaOfertas item={item} i={i} key={"mepInformaDoc " + i} />
+                            <TarjetaOfertas 
+                            tabIndex="3"
+                            item={item} 
+                            i={i} key={"mepInformaDoc " + i}
+                             />
                         ))
 
                     }
@@ -163,21 +176,23 @@ function Menu(props) {
 
 
 
-                <div className="col-sm-4" tabIndex="4">
+                <div className="col-sm-4">
                     {
                         //***********ESTUDIANTES
                     }
-                    <img 
+                    <img
+                    tabIndex="4" 
                     className="img-fluid"
-                    tabIndex="4" role="heading" aria-level="1"
+                    role="heading" aria-level="1"
                     src={imgEstudiantes} 
                     alt="Oferta para la Estudiantes" />
                     <br />
                     {
                         //oferta televisiva  estudiantes
                     }
-                    <img 
-                    tabIndex="4" role="heading" aria-level="2"
+                    <img
+                    tabIndex="4" 
+                    role="heading" aria-level="2"
                     className="img-fluid hvr-bob" 
                     src={imgOfertaTelevisiva} 
                     alt="Oferta Televisiva Estudiantes" />
@@ -189,7 +204,11 @@ function Menu(props) {
                         ofertaTelevisivaEstudiantes &&
                         //Mapeo del arreglo para renderizar
                         ofertaTelevisivaEstudiantes.map((item, i) => (
-                            <TarjetaOfertas item={item} i={i} key={"televisivaEstudiantes" + i} />
+                            <TarjetaOfertas 
+                            tabIndex="4"
+                            item={item} 
+                            i={i}
+                            key={"televisivaEstudiantes" + i} />
                         ))
 
                     }
@@ -201,7 +220,8 @@ function Menu(props) {
                     {
                         ofertaVirtualEstudiantes.length > 0 &&
                         <img 
-                        tabIndex="4" role="heading" aria-level="3"
+                        tabIndex="4"
+                        role="heading" aria-level="3"
                         className="img-fluid" 
                         src={imgOfertaVirtual} 
                         alt="oferta virtual Estudiantes" />
@@ -216,7 +236,10 @@ function Menu(props) {
                         ofertaVirtualEstudiantes &&
                         //Mapeo del arreglo para renderizar
                         ofertaVirtualEstudiantes.map((item, i) => (
-                            <TarjetaOfertas item={item} i={i} key={"virtualEstudiantes" + i} />
+                            <TarjetaOfertas 
+                            tabIndex="4"
+                            item={item} i={i} 
+                            key={"virtualEstudiantes" + i} />
                         ))
                     }
 
@@ -225,7 +248,8 @@ function Menu(props) {
                         //MEP informa
                         mepInformaEstudiantes > 0 &&
                         <img 
-                        tabIndex="4" role="heading" aria-level="4"
+                        tabIndex="4"
+                        role="heading" aria-level="4"
                         className="img-fluid" 
                         src={imgMepInforma} 
                         alt="MEP informa Estudiantes" />
@@ -234,26 +258,33 @@ function Menu(props) {
 
                         mepInformaEstudiantes &&
                         mepInformaEstudiantes.map((item, i) => (
-                            <TarjetaOfertas item={item} i={i} key={"mepInformaESt" + i} />
+                            <TarjetaOfertas 
+                            tabIndex="4"
+                            item={item} 
+                            i={i} 
+                            key={"mepInformaESt" + i} 
+                            />
                         ))
 
                     }
                 </div>
 
-                <div className="col-sm-4">
+                <div className="col-sm-4" >
                     <img 
+                    tabIndex="5"
                     className="img-fluid"
-                    tabIndex="5" role="heading" aria-level="1"
+                     role="heading" aria-level="1"
                     src={imgFamilia} 
                     alt="Oferta para la Familia" />
 
                     {
-                        // FAMILIA
+                        // FAMILIA tabIndex="5"
 
                     }
 
-                    <img 
-                    tabIndex="5" role="heading" aria-level="2"
+                    <img
+                    tabIndex="5" 
+                    role="heading" aria-level="2"
                     className="img-fluid hvr-bob" 
                     src={imgOfertaTelevisiva} 
                     alt="oferta televisiva Familia" />
@@ -262,14 +293,18 @@ function Menu(props) {
                         ofertaTelevisivaFamilias &&
                         //Mapeo del arreglo para renderizar
                         ofertaTelevisivaFamilias.map((item, i) => (
-                            <TarjetaOfertas item={item} i={i} key={"televisivaFamilia" + i} />
+                            <TarjetaOfertas 
+                            tabIndex="5"
+                            item={item} 
+                            i={i} key={"televisivaFamilia" + i} />
                         ))
 
                     }
                     {
                         //oferta virtual familia
                         <img 
-                        tabIndex="5" role="heading" aria-level="3"
+                        tabIndex="5"
+                        role="heading" aria-level="3"
                         className="img-fluid" 
                         src={imgOfertaVirtual} 
                         alt="oferta virtual Familia" />
@@ -279,12 +314,17 @@ function Menu(props) {
 
                         ofertaVirtualFamilias &&
                         ofertaVirtualFamilias.map((item, i) => (
-                            <TarjetaOfertas item={item} i={i} key={"virtualFamilia" + i} />
+                            <TarjetaOfertas 
+                            tabIndex="5"
+                            item={item} 
+                            i={i} key={"virtualFamilia" + i} 
+                            />
                         ))
 
                     }
                     <img 
-                    tabIndex="5" role="heading" aria-level="4"
+                    tabIndex="5"
+                     role="heading" aria-level="4"
                     className="img-fluid hvr-bob" 
                     src={imgMepInforma} 
                     alt="MEP informa Familia" />
@@ -292,25 +332,28 @@ function Menu(props) {
                         //FAMILIA - MEP informa                       
                         mepInformaFamilias &&
                         mepInformaFamilias.map((item, i) => (
-                            <TarjetaOfertas item={item} i={i} key={"mepInformaFam" + i} />
+                            <TarjetaOfertas 
+                            tabIndex="5"
+                            item={item} i={i} 
+                            key={"mepInformaFam" + i}
+                             />
                         ))
 
                     }
                 </div>
             </div>
 
-            <div className="row">
+            <div className="row" tabIndex="6">
                 <div className="col-sm-8 mb-2">
                     <img 
-                    tabIndex="6" 
+                     
                     className="img-fluid" 
                     src={imgGespro} 
                     alt="Banner Gespro" />
                 </div>
 
                 <div className="col-sm-4 text-right">
-                    <img 
-                    tabIndex="6" 
+                    <img                     
                     className="img-fluid logos" 
                     src={imgLogo} 
                     alt="Logos del MEP,Canal 13, Café Nacional, y UNED "/>
