@@ -163,7 +163,7 @@ function Menu(props) {
 
 
 
-                <div className="col-sm-4">
+                <div className="col-sm-4" tabIndex="4">
                     {
                         //***********ESTUDIANTES
                     }
@@ -181,6 +181,9 @@ function Menu(props) {
                     className="img-fluid hvr-bob" 
                     src={imgOfertaTelevisiva} 
                     alt="Oferta Televisiva Estudiantes" />
+
+
+
                     {
                         //Valida que el arreglo no esté vacio:
                         ofertaTelevisivaEstudiantes &&
@@ -190,6 +193,8 @@ function Menu(props) {
                         ))
 
                     }
+
+
                     {
                         //oferta virtual estudiantes
                     }
