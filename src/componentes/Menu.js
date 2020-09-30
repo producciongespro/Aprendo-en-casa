@@ -44,19 +44,20 @@ function Menu(props) {
 
     return (
         <div 
-        className="container" 
-        title="Aprendo en casa en un sitio que tiene como fin proveer orientaciones, guías específicas y recursos de apoyo a la comunidad educativa nacional, ante la suspensión de lecciones en centros educativos, a raíz de la declaratoria de Emergencia Nacional provocada por el COVID 19.">
-            
-            <br />
+        className="container">              
+        <br />
 
             <div className="row">
+                
                 <div className="col-sm-10 encabAprend">
                     <img 
+             
                     tabIndex="1" role="banner"
                     className="img-fluid" 
                     src={imgEncabezado} 
-                    alt="Banner de Aprendo en casa" />
-    
+                    alt="Banner de Aprendo en casa" 
+                    Title="Sitio que tiene como fin proveer orientaciones, guías específicas y recursos de apoyo a la comunidad educativa nacional, ante la suspensión de lecciones en centros educativos, a raíz de la declaratoria de Emergencia Nacional provocada por el COVID 19"      
+                    />
                 </div>
 
                 <div className="col-sm-2 pt-4">
@@ -79,10 +80,10 @@ function Menu(props) {
                 <div className="col-sm-4 mb-2">
                     <img 
                     tabIndex="2"
-                    className="img-fluid" 
+                   className="img-fluid" 
                     src={imgDestacados} 
-                    alt="Sección de destacados" 
-                            />
+                    alt="Sección de destacados"
+                    />
                 </div>                
             </div>
 
@@ -102,7 +103,8 @@ function Menu(props) {
                     role="heading" aria-level="1"
                     className="img-fluid" 
                     src={imgDocentes} 
-                    alt="Oferta para los Docentes" />
+                    alt="Oferta para los Docentes"
+                  />
                     <br />
                     {
                         //oferta televisiva docentes
