@@ -1,20 +1,26 @@
 [
     {
         "nombre": "Fomento a la lectura",
-        "urlImg": "https://recursos.mep.go.cr/2020/aprendoencasa/assets/img/fomento_lectura2.png",
+        "urlImg": "https://recursos.mep.go.cr/2020/aprendoencasa/assets/img/btn_fomento_lectura_ch.png",
         "url": "http://www.mep.go.cr/plan-virtual-fomento-lectura",
         "descripcion": "Imagen que enlace al sitio del Plan de Fomento a la lectura del MEP"
     },
     {
         "nombre": "Plaza Sesamo",
-        "urlImg": "https://recursos.mep.go.cr/2020/aprendoencasa/assets/img/plazaSesamo2.png",
+        "urlImg": "https://recursos.mep.go.cr/2020/aprendoencasa/assets/img/btn_sesamo_ch.png",
         "url": "https://costaricamedios.cr/sesamo",
         "descripcion": "Imagen que enlace al sitio de SINART con los programas de plaza Sésamo"
     },
     {
         "nombre": "Guías aprendizaje base",
-        "urlImg": "https://recursos.mep.go.cr/2020/aprendoencasa/assets/img/ap_base2020.jpg",
+        "urlImg": "https://recursos.mep.go.cr/2020/aprendoencasa/assets/img/btn_plantillas_ch.png",
         "url": "http://www.ddc.mep.go.cr/estrategia-covid19/plantillas-aprendizajes-base-2020",
         "descripcion": "Imagen que enlace al sitio del MEP para descargar las plantillas de aprendizaje Base 2020"
-    }   
+    },
+    {
+        "nombre": "Programación de los programas Aprendo en casa",
+        "urlImg": "https://recursos.mep.go.cr/2020/aprendoencasa/assets/img/btn_programacion_ch.png",
+        "url": "https://www.mep.go.cr/aprendo-en-casa",
+        "descripcion": "Imagen que enlace al sitio del MEP con la programación de los programas Aprendo en casa"
+    }
 ]
