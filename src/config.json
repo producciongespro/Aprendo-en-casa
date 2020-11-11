@@ -1,5 +1,6 @@
 {
     "appName": "Aprendo en Casa",
     "version": "1.0",
-    "apiServer": "https://recursos.mep.go.cr/2020/webservices/aprendo-casa/"
+    "apiServer": "https://recursos.mep.go.cr/2020/webservices/aprendo-casa/",
+    "apiDev": "http://localhost/Aprendo-en-casa/webservices/"
 }
