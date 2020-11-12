@@ -11,9 +11,9 @@ var enlacesCovid=null;
 var destacados=jsonDestacados;
 
 // API DE PRODUCCIÓN
-//const URL_API = config.apiServer;
+const URL_API = config.apiServer;
 //API DE DESARROLLO
-const URL_API = config.apiDev;
+//const URL_API = config.apiDev;
 
 function App() {
   const [isReady, setIsReady ] = useState(false);
