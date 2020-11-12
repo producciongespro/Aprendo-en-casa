@@ -117,16 +117,14 @@ function Menu(props) {
                     alt="oferta televisiva Docentes" />
                     {
                         ofertaTelevisivaDocentes &&
-                        ofertaTelevisivaDocentes.map ((item, i)=> { 
-                            //console.log("item", item );
-                            return  (
+                        ofertaTelevisivaDocentes.map ((item, i)=> (
                             <TarjetaOfertas 
                             tabIndex="3"
                             item={item} 
                             i={i }
                             key={"televisivaDocentes" + i} 
                            />
-                        ) } )
+                        ))
 
                     }
                     {
