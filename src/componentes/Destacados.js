@@ -13,7 +13,7 @@ function Destacados(props) {
                             tabIndex="2" role="button"
                             title="Abre en una ventana nueva"
                             src={item.urlImg} 
-                            className="img-thumbnail" 
+                            className="img-thumbnail hvr-pop" 
                             alt={item.nombre} />
                         </a>                            
                     </div>

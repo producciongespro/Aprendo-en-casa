@@ -4,13 +4,13 @@ import Destacados from '../componentes/Destacados';
 import filtrar from '../modulos/filtrar';
 
 //imagenes
-import imgEncabezado from '../assets/img/encabezado_ch_aprendoencasa.png';
+import imgEncabezado from '../assets/img/banner_aprendoencasatv.png';
 import imgDocentes from '../assets/img/img_ch_docentes.png';
 import imgEstudiantes from '../assets/img/img_ch_estudiantes.png';
 import imgFamilia from '../assets/img/img_ch_familia.png';
 import imgOfertaTelevisiva from '../assets/img/btn_ch_oferta_tv.png';
 import imgOfertaVirtual from '../assets/img/btn_ch_oferta_virtual.png';
-import imgRecursosCovid from '../assets/img/btn_ch_recursos_covid19.png';
+import imgRecursosCovid from '../assets/img/btn_recursos_covid.png';
 import imgLogo from '../assets/img/logotipos_ch_mep_sinart_cafenal.png';
 import imgMepInforma from '../assets/img/btn_ch_mep_informa.png';
 import imgGespro from '../assets/img/banner_gespro.gif';
@@ -45,11 +45,11 @@ function Menu(props) {
     return (
         <div 
         className="container">              
-        <br />
+   
 
-            <div className="row">
+            <div className="row text-center">
                 
-                <div className="col-sm-10 encabAprend">
+                <div className="col-sm-12">
                     <img 
              
                     tabIndex="1" role="banner"
@@ -59,11 +59,12 @@ function Menu(props) {
                     Title="Sitio que tiene como fin proveer orientaciones, guías específicas y recursos de apoyo a la comunidad educativa nacional, ante la suspensión de lecciones en centros educativos, a raíz de la declaratoria de Emergencia Nacional provocada por el COVID 19"      
                     />
                 </div>
-
-                <div className="col-sm-2 pt-4">
+                </div>
+                <div className="row text-right">
+                <div className="col-sm-12 pt-4">
                     <img 
                     tabIndex="7" role="button"
-                    className="btn img-fluid btn-recursos"
+                    className="btn img-fluid btn-recursos hvr-pop"
                      src={imgRecursosCovid} 
                     onClick={props.handleCargarComponente} 
                     onKeyPress={props.handleCargarComponente} 
@@ -224,7 +225,7 @@ function Menu(props) {
                         <img 
                         tabIndex="4"
                         role="heading" aria-level="3"
-                        className="img-fluid" 
+                        className="img-fluid hvr-bob" 
                         src={imgOfertaVirtual} 
                         alt="oferta virtual Estudiantes" />
                     }
@@ -252,7 +253,7 @@ function Menu(props) {
                         <img 
                         tabIndex="4"
                         role="heading" aria-level="4"
-                        className="img-fluid" 
+                        className="img-fluid hvr-bob" 
                         src={imgMepInforma} 
                         alt="MEP informa Estudiantes" />
                     }
@@ -307,7 +308,7 @@ function Menu(props) {
                         <img 
                         tabIndex="5"
                         role="heading" aria-level="3"
-                        className="img-fluid" 
+                        className="img-fluid hvr-bob" 
                         src={imgOfertaVirtual} 
                         alt="oferta virtual Familia" />
                     }
