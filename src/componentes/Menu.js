@@ -3,20 +3,6 @@ import TarjetaOfertas from '../componentes/TarjetaOfertas';
 import Destacados from '../componentes/Destacados';
 import filtrar from '../modulos/filtrar';
 
-//imagenes
-import imgEncabezado from '../assets/img/banner_aprendoencasatv.png';
-import imgDocentes from '../assets/img/img_ch_docentes.png';
-import imgEstudiantes from '../assets/img/img_ch_estudiantes.png';
-import imgFamilia from '../assets/img/img_ch_familia.png';
-import imgOfertaTelevisiva from '../assets/img/btn_ch_oferta_tv.png';
-import imgOfertaVirtual from '../assets/img/btn_ch_oferta_virtual.png';
-import imgRecursosCovid from '../assets/img/btn_recursos_covid.png';
-import imgLogo from '../assets/img/logotipos_ch_mep_sinart_cafenal.png';
-import imgMepInforma from '../assets/img/btn_ch_mep_informa.png';
-import imgGespro from '../assets/img/banner_gespro.gif';
-import imgDestacados from '../assets/img/titulo_destacados.png';
-
-
 function Menu(props) {
     const docentes = filtrar(props.array, "poblacion", "Docentes");
     const estudiantes = filtrar(props.array, "poblacion", "Estudiantes");
@@ -54,7 +40,7 @@ function Menu(props) {
              
                     tabIndex="1" role="banner"
                     className="img-fluid" 
-                    src={imgEncabezado} 
+                    src='./assets/img/banner_aprendoencasatv.png'
                     alt="Banner de Aprendo en casa" 
                     Title="Sitio que tiene como fin proveer orientaciones, guías específicas y recursos de apoyo a la comunidad educativa nacional, ante la suspensión de lecciones en centros educativos, a raíz de la declaratoria de Emergencia Nacional provocada por el COVID 19"      
                     />
@@ -65,7 +51,7 @@ function Menu(props) {
                     <img 
                     tabIndex="7" role="button"
                     className="btn img-fluid btn-recursos hvr-pop"
-                     src={imgRecursosCovid} 
+                     src="./assets/img/btn_recursos_covid.png" 
                     onClick={props.handleCargarComponente} 
                     onKeyPress={props.handleCargarComponente} 
                     data-comp="enlaces" 
@@ -82,7 +68,7 @@ function Menu(props) {
                     <img 
                     tabIndex="2"
                    className="img-fluid" 
-                    src={imgDestacados} 
+                    src="./assets/img/titulo_destacados.png" 
                     alt="Sección de destacados"
                     />
                 </div>                
@@ -103,7 +89,7 @@ function Menu(props) {
                     tabIndex="3"
                     role="heading" aria-level="1"
                     className="img-fluid" 
-                    src={imgDocentes} 
+                    src="./assets/img/img_ch_docentes.png" 
                     alt="Oferta para los Docentes"
                   />
                     <br />
@@ -114,7 +100,7 @@ function Menu(props) {
                     tabIndex="3"
                     role="heading" aria-level="2"
                     className="img-fluid hvr-bob" 
-                    src={imgOfertaTelevisiva} 
+                    src="./assets/img/btn_ch_oferta_tv.png" 
                     alt="oferta televisiva Docentes" />
                     {
                         ofertaTelevisivaDocentes &&
@@ -135,7 +121,7 @@ function Menu(props) {
                     tabIndex="3"
                     role="heading" aria-level="3"
                     className="img-fluid hvr-bob" 
-                    src={imgOfertaVirtual} 
+                    src="./assets/img/btn_ch_oferta_virtual.png" 
                     alt="Oferta Virtual Docentes" />
                     {
                         ofertaVirtualDocentes &&
@@ -156,7 +142,7 @@ function Menu(props) {
                         <img 
                         tabIndex="3" role="heading" aria-level="4"
                         className="img-fluid" 
-                        src={imgMepInforma} 
+                        src="./assets/img/btn_ch_mep_informa.png" 
                         alt="MEP informa Docentes" />
                     }
                     {
@@ -187,7 +173,7 @@ function Menu(props) {
                     tabIndex="4" 
                     className="img-fluid"
                     role="heading" aria-level="1"
-                    src={imgEstudiantes} 
+                    src="./assets/img/img_ch_estudiantes.png" 
                     alt="Oferta para la Estudiantes" />
                     <br />
                     {
@@ -197,7 +183,7 @@ function Menu(props) {
                     tabIndex="4" 
                     role="heading" aria-level="2"
                     className="img-fluid hvr-bob" 
-                    src={imgOfertaTelevisiva} 
+                    src="./assets/img/btn_ch_oferta_tv.png" 
                     alt="Oferta Televisiva Estudiantes" />
 
 
@@ -226,7 +212,7 @@ function Menu(props) {
                         tabIndex="4"
                         role="heading" aria-level="3"
                         className="img-fluid hvr-bob" 
-                        src={imgOfertaVirtual} 
+                        src="./assets/img/btn_ch_oferta_virtual.png" 
                         alt="oferta virtual Estudiantes" />
                     }
                     {
@@ -254,7 +240,7 @@ function Menu(props) {
                         tabIndex="4"
                         role="heading" aria-level="4"
                         className="img-fluid hvr-bob" 
-                        src={imgMepInforma} 
+                        src="./assets/img/btn_ch_mep_informa.png" 
                         alt="MEP informa Estudiantes" />
                     }
                     {
@@ -277,7 +263,7 @@ function Menu(props) {
                     tabIndex="5"
                     className="img-fluid"
                      role="heading" aria-level="1"
-                    src={imgFamilia} 
+                    src="./assets/img/img_ch_familia.png" 
                     alt="Oferta para la Familia" />
 
                     {
@@ -289,7 +275,7 @@ function Menu(props) {
                     tabIndex="5" 
                     role="heading" aria-level="2"
                     className="img-fluid hvr-bob" 
-                    src={imgOfertaTelevisiva} 
+                    src="./assets/img/btn_ch_oferta_tv.png" 
                     alt="oferta televisiva Familia" />
                     {
                         //Valida que el arreglo no esté vacio:
@@ -309,7 +295,7 @@ function Menu(props) {
                         tabIndex="5"
                         role="heading" aria-level="3"
                         className="img-fluid hvr-bob" 
-                        src={imgOfertaVirtual} 
+                        src="./assets/img/btn_ch_oferta_virtual.png" 
                         alt="oferta virtual Familia" />
                     }
 
@@ -329,7 +315,7 @@ function Menu(props) {
                     tabIndex="5"
                      role="heading" aria-level="4"
                     className="img-fluid hvr-bob" 
-                    src={imgMepInforma} 
+                    src="./assets/img/btn_ch_mep_informa.png" 
                     alt="MEP informa Familia" />
                     {
                         //FAMILIA - MEP informa                       
@@ -351,14 +337,14 @@ function Menu(props) {
                     <img 
                      
                     className="img-fluid" 
-                    src={imgGespro} 
+                    src="./assets/img/banner_gespro.gif" 
                     alt="Banner Gespro" />
                 </div>
 
                 <div className="col-sm-4 text-right">
                     <img                     
                     className="img-fluid logos" 
-                    src={imgLogo} 
+                    src="./assets/img/logotipos_ch_mep_sinart_cafenal.png" 
                     alt="Logos del MEP,Canal 13, Café Nacional, y UNED "/>
                 </div>
             </div>

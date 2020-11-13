@@ -1,6 +1,5 @@
 import React from 'react';
-import imgEncabezadoRec from '../assets/img/encabezado_ch_recursos_covid19.png';
-import imgVolver from '../assets/img/btn_ch_volver.png';
+
 
 function EnlacesCovid (props) {
     
@@ -11,7 +10,7 @@ function EnlacesCovid (props) {
                     <img 
                     tabIndex="1" role="banner"
                     className="img-fluid encab" 
-                    src={imgEncabezadoRec} 
+                    src="./assets/img/encabezado_ch_recursos_covid19.png" 
                     alt="Banner de Recursos Covid" />
                 </div>
             </div>
@@ -20,7 +19,7 @@ function EnlacesCovid (props) {
                 <div className="col-sm-12 hvr-wobble-horizontal text-center img-fluid btn-volver">
                     <img 
                         tabIndex="1" role="button"
-                        src={imgVolver}
+                        src="./assets/img/btn_ch_volver.png"
                         alt="volver a la página de aprendo en casa" 
                         data-comp="menu" 
                         onClick={props.handleCargarComponente}

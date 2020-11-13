@@ -2,7 +2,7 @@ import React from 'react';
 import './destacados.css';
 
 function Destacados(props) {
-
+console.log(" props.array",  props.array);
     return (
         <React.Fragment>
             {
