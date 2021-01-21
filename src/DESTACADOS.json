@@ -22,5 +22,11 @@
         "urlImg": "https://recursos.mep.go.cr/2020/aprendoencasa/assets/img/btn_programacion.png",
         "url": "https://www.mep.go.cr/programacion-aprendo-en-casa",
         "descripcion": "Imagen que enlace al sitio del MEP con la programación de los programas Aprendo en casa"
+    },
+    {
+        "nombre": "Videoteca Aprendo en casa",
+        "urlImg": "https://recursos.mep.go.cr/2020/aprendoencasa/assets/img/btn_videoteca.png",
+        "url": "https://www.mep.go.cr/node/18405",
+        "descripcion": "Imagen que enlace al sitio de la VideoTeca Aprendo en casa"
     }
 ]
