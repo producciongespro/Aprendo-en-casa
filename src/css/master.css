@@ -76,3 +76,7 @@ background-color:#009962;
     height: auto;
 }
 
+.destacados {
+    float: right;
+    margin-right: 3%;
+}

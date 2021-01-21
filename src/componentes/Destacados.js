@@ -7,7 +7,7 @@ console.log(" props.array",  props.array);
         <React.Fragment>
             {
                 props.array.map((item, i) => (
-                    <div className="col-sm-2 text-center mb-2"  key={"tarjeta"+i} >
+                    <div className="col-sm-2 text-center mb-2 destacados"  key={"tarjeta"+i} >
                         <a href={item.url} target="_blank" rel="noopener noreferrer" >
                             <img 
                             tabIndex="2" role="button"
