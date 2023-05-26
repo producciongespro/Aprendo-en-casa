@@ -3,7 +3,7 @@ import config from './config.json';
 import Splash from './componentes/Splash';
 import Menu from './componentes/Menu';
 import EnlacesCovid from './componentes/EnlacesCovid';
-
+import Calificame from './componentes/Calificame/Calificame';
 import jsonDestacados from './DESTACADOS.json';
 
 var enlacesMenu=null;
@@ -51,9 +51,11 @@ function App() {
       }
         {
 
-          isReady && nombreComponente === "menu" &&
-            <Menu array={enlacesMenu} destacados={destacados} handleCargarComponente={handleCargarComponente} />                      
-          
+          isReady && nombreComponente === "menu" && <>
+              <Menu array={enlacesMenu} destacados={destacados} handleCargarComponente={handleCargarComponente} />                      
+              <Calificame idApp={44} tipoBtn = "full" flotante={3} tamano="m" />
+          </>
+
         }
         {
           isReady && nombreComponente === "enlaces" &&
